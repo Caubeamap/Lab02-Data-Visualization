@@ -1,0 +1,28 @@
+# Data files (large files should not be committed to GitHub)
+WDIEXCEL.xlsx
+*.xlsx
+*.csv
+*.zip
+*.rar
+raw_data/
+data/
+
+# Python / Jupyter Notebook
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
