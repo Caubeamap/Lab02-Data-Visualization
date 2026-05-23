@@ -32,10 +32,10 @@ Lab2_TQH/
 
 ### 📊 Dữ liệu sử dụng (World Development Indicators - WDI)
 Dự án sử dụng bộ dữ liệu **World Development Indicators (WDI)** được cung cấp bởi Ngân hàng Thế giới (World Bank).
-* **Lưu ý quan trọng**: Do file dữ liệu gốc `WDIEXCEL.xlsx` có dung lượng rất lớn (~80MB), vượt quá giới hạn khuyến nghị của GitHub, file này đã được thêm vào cấu hình `.gitignore` để không bị đẩy lên repo.
+* **Lưu ý quan trọng**: Do file dữ liệu gốc `WDIEXCEL.xlsx` có dung lượng rất lớn (~80MB), file này đã được thêm vào `.gitignore` và **KHÔNG** được đẩy lên GitHub để tránh làm nặng repository.
 * **Hướng dẫn cài đặt dữ liệu**:
-  1. Tải file dữ liệu gốc `WDIEXCEL.xlsx` từ [World Bank DataBank](https://databank.worldbank.org/source/world-development-indicators).
-  2. Copy file `WDIEXCEL.xlsx` vừa tải về và đặt trực tiếp vào thư mục gốc `Lab2_TQH/` trên máy cá nhân của bạn để các script Python có thể đọc và xử lý được.
+  1. Nhóm trưởng hoặc các thành viên chia sẻ file dữ liệu gốc `WDIEXCEL.xlsx` cho nhau thông qua kênh riêng (Google Drive, USB, v.v.).
+  2. Tải và copy file `WDIEXCEL.xlsx` vào trực tiếp thư mục gốc `Lab2_TQH/` trên máy cá nhân của bạn để các mã nguồn tiền xử lý dữ liệu có thể hoạt động bình thường.
 
 ---
 
