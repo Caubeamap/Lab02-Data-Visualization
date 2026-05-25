@@ -1,7 +1,6 @@
 # Data files (large files should not be committed to GitHub)
 WDIEXCEL.xlsx
 *.xlsx
-*.csv
 *.zip
 *.rar
 raw_data/

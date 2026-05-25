@@ -1,0 +1,145 @@
+--- PAGE 1 ---
+Lab 02 Trực Quan Hóa Dữ Liệu CQ2023/24
+Lab 02: Khai thác và trực quan hóa dữ liệu bằng
+Tableau
+1 Quy định chung
+•Bài làm được thực hiện theo nhóm tối thiểu 3 người và tối đa 5 người.
+•Thành viên không tham gia sẽ không có điểm bài tập này.
+•Bài làm phải tuân thủ theo yêu cầu đồ án.
+•Các nguồn tài liệu tham khảo (nếu có) cần ghi đầy đủ trong báo cáo ở mụcTài liệu tham khảo.
+•Các công cụ hỗ trợ trong việc code, viết báo cáo như ChatGPT, Github Copilot,... chỉ dùng
+như một công cụ tham khảo; nội dung phải được kiểm tra và chỉnh sửa phù hợp với bài toán
+đặt ra. Nếu phát hiện sử dụng công cụ AI để sinh nội dung quá nhiều, hoặc nội dung không
+phù hợp/sai lệch thì sẽ trừ tối đa50%số điểm (tùy mức độ).
+•Bài giống nhau sẽ nhận 0 điểm môn học.
+•Các bài làmphúc khảo không đúng(yêu cầu phúc khảo nhưng kết quả chấm lại không thay
+đổi hoặc không hợp lệ) sẽ bị trừ50%số điểm của bài tập này.
+2 Giới thiệu đồ án
+2.1 Giới thiệu đồ án
+World Development Indicators(WDI) là một nguồn dữ liệu do Ngân hàng Thế giới (World Bank)
+cung cấp, tập trung vào các chỉ số phát triển toàn cầu. Đây là kho dữ liệu toàn diện với hơn1.600
+chỉ sốvề kinh tế, xã hội và môi trường, bao gồm thông tin từ hơn200 quốc giatrên toàn cầu,
+trải dài qua nhiều năm.
+Thông qua việc khai thác và phân tích dữ liệu này, đồ án hướng đến mục tiêu trình bày các xu
+hướng phát triển, khám phá mối quan hệ giữa các chỉ số, và làm rõ các vấn đề nổi bật như phát
+triển kinh tế, biến đổi khí hậu, giáo dục, sức khỏe và môi trường.
+VNU-HCMUS Bộ môn Khoa học máy tính, FIT Trang 1
+--- PAGE 2 ---
+Lab 02 Trực Quan Hóa Dữ Liệu CQ2023/24
+2.2 Nhiệm vụ đồ án
+Trong đồ án này, các bạn sẽ thực hiện các nhiệm vụ sau:
+1. Phân tích cơ bản về dữ liệu
+•Giới thiệu tổng quan vềdataset.
+•Mô tả cấu trúc dữ liệu, số lượng bản ghi và số lượng trường dữ liệu.
+•Thực hiện phân tích thống kê cơ bản.
+•Thực hiện tiền xử lý dữ liệu nếu cần thiết (xử lý dữ liệu thiếu, chuẩn hóa dữ liệu, lọc dữ
+liệu,...).
+2. Xác định mục tiêu và lựa chọn các trường dữ liệu
+•Xác định mục tiêu phân tích và lựa chọn các trường dữ liệu liên quan để trực quan hóa.
+•Tìm hiểu và giải thíchý nghĩacủa các chỉ số (metrics) được sử dụng trong bài phân tích.
+•Giải thíchtại saocácmetricshoặc trường dữ liệu được lựa chọn là phù hợp với mục tiêu
+phân tích.
+•Xem xét các mối quan hệ giữa các trường dữ liệu để đưa ra lựa chọn phù hợp.
+•Mỗi nhóm cần xác định số mục tiêu phân tích bằng với số lượng thành viên trong nhóm.
+3. Lựa chọn biểu đồ thích hợp và giải thích lý do
+•Lựachọnbiểuđồphùhợpvớitínhchấtcủadữliệu(categorical,numerical,time-series,...).
+•Giải thíchtại saolựa chọn biểu đồ đó để biểu diễn dữ liệu.
+•Đảm bảo việc biểu diễn dữ liệu chính xác và dễ hiểu,tránh các biểu diễn gây hiểu
+nhầm.
+•Sử dụng đa dạng các biểu đồ để làm rõ mục tiêu phân tích.
+•Bài phân tích cần bao phủ các loại biểu đồ đã được học trong môn học.
+4. Phân tích và rút ra kết luận
+•Phân tích kết quả từ các biểu đồ.
+•Trình bày các nhận xét và xu hướng rút ra từ dữ liệu.
+•Đưa ra các kết luận dựa trên kết quả phân tích.
+VNU-HCMUS Bộ môn Khoa học máy tính, FIT Trang 2
+--- PAGE 3 ---
+Lab 02 Trực Quan Hóa Dữ Liệu CQ2023/24
+3 Yêu cầu đồ án
+•Phầntiền xử lý dữ liệu: nhóm sử dụngPythonvới các thư viện thông thường (NumPy,
+pandas,...). Toàn bộ code cần được tổ chức trong một file Jupyter Notebook (.ipynb) kèm
+theo bài nộp.
+•Phầntrực quan hóa dữ liệu và xây dựng dashboard: nhóm thực hiện bằngTableau
+(Tableau Desktop hoặc Tableau Public).Không sử dụngcác công cụ trực quan hóa khác
+(Power BI, Looker Studio, Python matplotlib/seaborn/plotly,...) để minh họa kết quả cuối
+cùng. Mọi biểu đồ trong báo cáo phải được xuất trực tiếp từ file Tableau của nhóm.
+•Nếu sử dụng các thư viện Python khác ngoài các thư viện phổ biến cho tiền xử lý, nhóm cần
+giải thích rõ lý do trong báo cáo.
+•Toàn bộ phân tích trực quan được tổ chức trongmột file Tableau(.twbx—Tableau Packaged
+Workbook, đã đóng gói kèm dữ liệu), bao gồm:
+–Dữ liệu đã đượcconnectvào Tableau (có thể từ file CSV/XLSX sau tiền xử lý bằng
+Python).
+–Cácworksheetvàdashboardbao gồm biểu đồ, chú thích, tiêu đề rõ ràng.
+–Có ít nhất các thành phần tương tác cơ bản:filter(bộ lọc) hiển thị trên dashboard và
+dashboard actions(filter / highlight) giữa các biểu đồ.
+•Báo cáo cần bao gồm:
+–Mô tả bài toán, giải thích dữ liệu, trình bày nhận xét.
+–Mô tả quy trình tiền xử lý dữ liệu bằng Python.
+–Ảnh chụp các biểu đồ và dashboard từ Tableau, kèm phần giải thích và nhận xét tương
+ứng.
+•Sau khi hoàn thành, nhóm cầnexport báo cáo Tableau ra file PDF(File→Print to PDF,
+hoặcDashboard→Export As→PDF). File PDF phải hiển thị đầy đủ các trang/dashboard và
+biểu đồ, trùng khớp với file.twbx.
+•Nhóm chỉ sử dụng dữ liệu được cung cấp bởiWorld Development Indicators (WDI).
+VNU-HCMUS Bộ môn Khoa học máy tính, FIT Trang 3
+--- PAGE 4 ---
+Lab 02 Trực Quan Hóa Dữ Liệu CQ2023/24
+4 Quy định nộp bài
+•Nhóm cử đại diện 1 người nộp bài.
+•Trước khi nộp, cần chạy lại toàn bộ các cell trong notebook vàkhông xóa outputđể đảm
+bảo biểu đồ khớp với báo cáo.
+•Bài nộp là file nén[Tên_Nhóm].zipbao gồm:
+1. Thư mục chứa dữ liệu hoặc link công khai tới dữ liệu.
+2. Các file code và file chứa Dashboard.
+3. File báo cáo:[Tên_Nhóm].pdf
+4.Video 1 — Giới thiệu công cụ Tableau: trình bày tổng quan về Tableau, các tính
+năng chính nhóm đã sử dụng trong đồ án (chart types, dashboard, filter, actions,...).
+5.Video 2 — Trình bày phân tích: trình bày kết quả phân tích dữ liệu, diễn giải các
+biểu đồ và dashboard, nêu nhận xét và kết luận.
+•Yêu cầu video: định dạngMP4, thời lượngkhông quá 10 phút/video.
+•Trong trường hợp file video hoặc dữ liệu quá nặng để nộp trực tiếp, nhóm upload lênGoogle
+Drive hoặc YouTube(chế độunlisted— chỉ người có link mới xem được) và đính kèm link
+vào file báo cáo. Link phải còn truy cập đượcít nhất 2 năm. File code và báo cáo vẫn nộp
+trực tiếp trên Moodle.
+5 Tiêu chí đánh giá
+STT Tiêu chí Tỉ lệ
+1 Xác định bài toán phân tích chung và mục tiêu phân tích của từng thành
+viên
+20%
+2 Tiền xử lý dữ liệu (quy mô, cấu trúc, chất lượng) 20%
+3 Trực quan hóa, phân tích dữ liệu và Interactive Dashboard(chi
+tiết bên dưới)
+40%
+4 Trình bày báo cáo (bố cục, hình thức, tính khoa học) 20%
+Tổng điểm 100%
+Chi tiết tiêu chí 3 — Trực quan hóa, phân tích dữ liệu và Dashboard (40%):
+VNU-HCMUS Bộ môn Khoa học máy tính, FIT Trang 4
+--- PAGE 5 ---
+Lab 02 Trực Quan Hóa Dữ Liệu CQ2023/24
+3.x Tiêu chí con Tỉ lệ
+3.1 Lựa chọn biểu đồ phù hợp: Loại biểu đồ đúng với bản chất dữ liệu (định tính
+/ định lượng, phân bố / so sánh / tương quan / xu hướng...); sử dụng đa dạng
+các loại biểu đồ đã học.
+10%
+3.2 Trình bày biểu đồ: Tiêu đề rõ ràng, nhãn trục đầy đủ, chú thích (legend) dễ
+đọc, bảng màu (color palette) hài hòa và nhất quán xuyên suốt, không gây rối mắt
+hay khó phân biệt.
+10%
+3.3 Chất lượng nhận xét: Nhận xét bám sát dữ liệu trên biểu đồ, chỉ ra được xu
+hướng, ngoại lai, sự khác biệt đáng chú ý; kết luận có ý nghĩa và trả lời được mục
+tiêu phân tích.
+10%
+3.4 Dashboard — Bố cục và thiết kế: Sắp xếp các thành phần hợp lý, thứ tự đọc
+tự nhiên (tổng quan trước, chi tiết sau), không gian giữa các biểu đồ cân đối, giao
+diện không rối.
+5%
+3.5 Dashboard — Tương tác: Có bộ lọc (filter), thanh chọn (selector/dropdown),
+hoặc các thành phần tương tác giúp người dùng tự khám phá dữ liệu theo nhu
+cầu.
+5%
+6 Liên hệ
+Mọi thắc mắc trong quá trình thực hiện vui lòng gửi mail về:
+•huyban.han@gmail.com
+•vntan.work@gmail.com
+— Good luck —
+VNU-HCMUS Bộ môn Khoa học máy tính, FIT Trang 5
