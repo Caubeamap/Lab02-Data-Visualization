@@ -62,6 +62,8 @@ data/
 *.snm
 *.vrb
 *.xdv
+.latexmkrc
+skills-lock.json
 
 # Temporary files
 *.tmp
