@@ -1,0 +1,31 @@
+\section{Dữ liệu và tiền xử lý}
+
+\subsection{Nguồn dữ liệu}
+
+Dữ liệu gốc là file \texttt{WDIEXCEL.xlsx}, gồm các sheet chính \texttt{Data}, \texttt{Country}, \texttt{Series} và các bảng metadata liên quan của World Bank. Nhóm chỉ giữ các quốc gia hoặc vùng lãnh thổ có trường \texttt{Region} hợp lệ trong sheet \texttt{Country}, qua đó loại bỏ các dòng tổng hợp như World, nhóm thu nhập hoặc khu vực tổng hợp. Quyết định này giúp mỗi quan sát trong dữ liệu đầu ra tương ứng với một đơn vị địa lý cụ thể, phù hợp với các biểu đồ so sánh quốc gia và bản đồ trong Tableau.
+
+\subsection{Quy trình tiền xử lý}
+
+Mỗi hướng phân tích được lọc theo các indicator WDI đã xác nhận có trong sheet \texttt{Series}. Giai đoạn phân tích là 2000--2023. Với từng cặp \texttt{Country\_Code} và \texttt{Indicator\_Code}, nhóm xử lý giá trị thiếu theo quy tắc nhất quán để bảo đảm khả năng so sánh giữa các chủ đề. Nếu toàn bộ chuỗi không có quan sát, cặp country--indicator bị loại khỏi phân tích. Nếu khoảng thiếu dữ liệu nội bộ dài hơn 2 năm liên tiếp, cặp đó cũng bị loại để tránh tạo chuỗi dữ liệu giả. Các khoảng thiếu nội bộ dài tối đa 2 năm được nội suy tuyến tính. Nhóm không ngoại suy dữ liệu ở đầu hoặc cuối chuỗi thời gian vì các giá trị này không có điểm neo quan sát đủ tin cậy.
+
+Đối với phần kinh tế, quy trình này tạo ra file \texttt{wdi\_economy.csv} làm nguồn dữ liệu chính cho Tableau, đồng thời tạo thêm các file kiểm tra indicator và báo cáo làm sạch. Các file phụ không được dùng trực tiếp để vẽ biểu đồ, nhưng giúp truy vết quyết định tiền xử lý khi cần kiểm tra lại.
+
+\subsection{File đầu ra}
+
+\begin{longtable}{L{5cm}L{9cm}}
+\caption{Các file dữ liệu đầu ra phục vụ trực quan hóa và kiểm tra tiền xử lý. File chính được dùng trong Tableau; các file kiểm tra hỗ trợ truy vết quyết định làm sạch dữ liệu.}
+\label{tab:output-files}\\
+\toprule
+File & Nội dung \\
+\midrule
+\endfirsthead
+\toprule
+File & Nội dung \\
+\midrule
+\endhead
+\texttt{data\_output/}\linebreak\texttt{wdi\_economy.csv} & Dữ liệu sạch cho chủ đề phát triển kinh tế \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_education.csv} & Dữ liệu sạch cho chủ đề giáo dục \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_economy}\linebreak\texttt{\_indicator\_audit.csv} & Kiểm tra indicator kinh tế trong WDI \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_economy}\linebreak\texttt{\_cleaning\_report.csv} & Báo cáo trạng thái làm sạch từng cặp country--indicator kinh tế \\
+\bottomrule
+\end{longtable}

@@ -1,0 +1,77 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{microtype}
+
+\setmainlanguage{vietnamese}
+\setmainfont{Times New Roman}
+\definecolor{navyblue}{RGB}{0,51,102}
+\definecolor{sectionblue}{RGB}{0,64,128}
+\definecolor{subsectionblue}{RGB}{34,102,170}
+\hypersetup{colorlinks=true, linkcolor=navyblue, urlcolor=navyblue}
+\setlist[itemize]{leftmargin=1.2cm}
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{1.25cm}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  justification=justified,
+  singlelinecheck=false
+}
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{sectionblue}}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{subsectionblue}}
+  {\thesubsection}{1em}{}
+
+\newcommand{\reportfigure}[3]{%
+\begin{figure}[H]
+    \centering
+    \IfFileExists{#1}{%
+        \includegraphics[width=0.92\textwidth]{#1}%
+    }{%
+        \fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering\textit{Chèn hình: \detokenize{#1}}}}%
+    }
+    \caption{#2}
+    \label{#3}
+\end{figure}
+}
+
+\title{Phân tích trực quan các chỉ số phát triển bền vững}
+\author{}
+\date{Tháng 05 năm 2026}
+
+\begin{document}
+
+\input{coverpage}
+
+\tableofcontents
+\newpage
+
+\input{sections/01_gioi_thieu}
+\input{sections/02_bai_toan_chung}
+\input{sections/02_du_lieu_tien_xu_ly}
+\input{sections/03_phan_tich_kinh_te}
+\input{sections/04_phan_tich_giao_duc}
+\input{sections/05_phan_tich_suc_khoe}
+\input{sections/06_phan_tich_moi_truong}
+\input{sections/07_dashboard_tableau}
+\input{sections/08_ket_luan}
+
+\end{document}

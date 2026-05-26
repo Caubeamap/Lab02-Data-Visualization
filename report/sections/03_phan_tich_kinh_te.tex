@@ -1,0 +1,49 @@
+\section{Phân tích phát triển kinh tế}
+
+\subsection{Vai trò trong bài toán chung}
+
+Phần kinh tế do Lê Lâm Trí Đức phụ trách nhằm đánh giá nền tảng vật chất của phát triển. Các chỉ số GDP, GDP bình quân đầu người, tăng trưởng GDP và tỷ lệ nghèo giúp trả lời câu hỏi: quốc gia/khu vực nào tạo ra nhiều nguồn lực kinh tế hơn, tốc độ tăng trưởng khác nhau ra sao, và mức phát triển kinh tế có đi kèm giảm nghèo hay không.
+
+\subsection{Câu hỏi phân tích và chỉ số sử dụng}
+
+Phần phân tích kinh tế tập trung vào ba câu hỏi: GDP bình quân đầu người thay đổi như thế nào trong giai đoạn 2000--2023, tăng trưởng GDP khác nhau ra sao giữa các khu vực, và GDP bình quân đầu người có quan hệ gì với tỷ lệ nghèo. Bảng \ref{tab:economy-indicators} trình bày các chỉ số WDI được sử dụng và tên cột sau tiền xử lý.
+
+\begin{longtable}{L{4cm}L{5cm}L{5cm}}
+\caption{Các chỉ số WDI sử dụng trong phân tích phát triển kinh tế. Các cột sau xử lý được chuẩn hóa để nhập vào Tableau và sử dụng nhất quán trong báo cáo.}
+\label{tab:economy-indicators}\\
+\toprule
+Indicator code & Cột sau xử lý & Ý nghĩa \\
+\midrule
+\endfirsthead
+\toprule
+Indicator code & Cột sau xử lý & Ý nghĩa \\
+\midrule
+\endhead
+\texttt{NY.GDP.MKTP.CD} & \texttt{GDP\_current\_USD} & Quy mô GDP theo USD hiện hành \\
+\texttt{NY.GDP.PCAP.CD} & \texttt{GDP\_per\_capita}\linebreak\texttt{\_current\_USD} & GDP bình quân đầu người theo USD hiện hành \\
+\texttt{NY.GDP.MKTP.KD.ZG} & \texttt{GDP\_growth\_annual\_pct} & Tốc độ tăng trưởng GDP hàng năm \\
+\texttt{SI.POV.DDAY} & \texttt{Poverty\_headcount\_3usd}\linebreak\texttt{\_2021PPP\_pct} & Tỷ lệ dân số dưới ngưỡng 3 USD/ngày theo PPP 2021 \\
+\bottomrule
+\end{longtable}
+
+\subsection{Kết quả trực quan hóa}
+
+Hình \ref{fig:economy-gdp-trend} trình bày xu hướng GDP bình quân đầu người của một số quốc gia đại diện trong giai đoạn 2000--2023. Biểu đồ đường phù hợp với chuỗi thời gian vì cho phép quan sát cả mức chênh lệch tuyệt đối lẫn tốc độ thay đổi qua từng giai đoạn. Các quốc gia thu nhập cao như Hoa Kỳ và Đức duy trì mức GDP bình quân đầu người cao hơn rõ rệt, trong khi Trung Quốc, Việt Nam và Ấn Độ tăng theo xu hướng đi lên nhưng xuất phát từ mức thấp hơn.
+
+\reportfigure{images/economy/economy_gdp_per_capita_trend.png}{Xu hướng GDP bình quân đầu người của các quốc gia đại diện trong giai đoạn 2000--2023. Trục tung biểu diễn GDP bình quân đầu người theo USD hiện hành; mỗi đường màu đại diện cho một quốc gia.}{fig:economy-gdp-trend}
+
+Hình \ref{fig:economy-growth-region} so sánh tăng trưởng GDP trung bình giữa các khu vực trong năm 2023. Biểu đồ cột ngang được sắp xếp giảm dần để nhấn mạnh khác biệt tương đối giữa các khu vực. Kết quả cho thấy các khu vực châu Á, đặc biệt Đông Á--Thái Bình Dương và Nam Á, có mức tăng trưởng trung bình cao hơn trong năm được chọn, trong khi Châu Âu--Trung Á nằm ở nhóm thấp hơn.
+
+\reportfigure{images/economy/economy_gdp_growth_region_2023.png}{Tăng trưởng GDP trung bình theo khu vực năm 2023. Giá trị trên thanh là trung bình của chỉ số tăng trưởng GDP hàng năm trong các quốc gia có dữ liệu thuộc từng khu vực.}{fig:economy-growth-region}
+
+Hình \ref{fig:economy-gdp-poverty} thể hiện quan hệ giữa GDP bình quân đầu người và tỷ lệ nghèo trong nhóm quốc gia có đủ dữ liệu năm 2022. Trục GDP sử dụng thang log để giảm ảnh hưởng của chênh lệch quá lớn giữa các quốc gia thu nhập thấp và thu nhập cao. Các điểm dữ liệu cho thấy xu hướng nghịch: những quốc gia có GDP bình quân đầu người cao thường tập trung ở vùng tỷ lệ nghèo thấp, trong khi nhóm GDP thấp và trung bình có mức tỷ lệ nghèo phân tán rộng hơn. Do chỉ số nghèo thiếu dữ liệu ở nhiều quốc gia, kết quả này nên được hiểu là xu hướng quan sát được trên nhóm quốc gia có dữ liệu, không phải kết luận đại diện cho toàn bộ thế giới.
+
+\reportfigure{images/economy/economy_gdp_poverty_scatter_2022.png}{Mối quan hệ giữa GDP bình quân đầu người và tỷ lệ nghèo năm 2022. Mỗi điểm là một quốc gia có đủ dữ liệu; màu sắc biểu diễn khu vực. Trục hoành dùng thang log để thể hiện tốt hơn các mức GDP chênh lệch lớn.}{fig:economy-gdp-poverty}
+
+Hình \ref{fig:economy-gdp-map} bổ sung góc nhìn không gian cho phân tích kinh tế bằng cách thể hiện GDP bình quân đầu người trên bản đồ thế giới năm 2023. Các vùng Bắc Mỹ, Tây Âu, châu Đại Dương và một số nền kinh tế phát triển ở Đông Á có màu đậm hơn, phản ánh mức GDP bình quân đầu người cao. Ngược lại, nhiều quốc gia ở châu Phi hạ Sahara, Nam Á và một phần Đông Nam Á có màu nhạt hơn. Thang màu được giới hạn ở mức 100.000 USD để giảm ảnh hưởng của các giá trị ngoại lai; giá trị GDP thực vẫn được hiển thị trong tooltip của Tableau.
+
+\reportfigure{images/economy/economy_gdp_per_capita_map_2023.png}{Phân bố GDP bình quân đầu người theo quốc gia năm 2023. Thang màu biểu diễn GDP bình quân đầu người theo USD hiện hành và được giới hạn ở 100.000 USD nhằm tránh một số giá trị ngoại lai làm giảm khả năng phân biệt màu.}{fig:economy-gdp-map}
+
+\subsection{Thảo luận}
+
+Tổng hợp bốn biểu đồ cho thấy phát triển kinh tế có sự phân hóa rõ theo cả thời gian, khu vực và không gian địa lý. GDP bình quân đầu người tăng ở nhiều quốc gia, nhưng khoảng cách giữa nhóm thu nhập cao và nhóm đang phát triển vẫn lớn. Tăng trưởng GDP năm 2023 cho thấy một số khu vực đang phát triển có tốc độ tăng cao hơn, tuy nhiên mức tăng trưởng theo năm không đồng nghĩa trực tiếp với mức sống cao hơn vì điểm xuất phát GDP bình quân đầu người rất khác nhau. Biểu đồ scatter bổ sung bằng chứng rằng GDP bình quân đầu người cao thường đi kèm tỷ lệ nghèo thấp hơn, nhưng dữ liệu nghèo năm 2022 không đầy đủ và không cho phép suy luận nhân quả. Vì vậy, phần kinh tế nên được đọc như một bức tranh mô tả xu hướng và tương quan, không phải mô hình giải thích toàn bộ nguyên nhân của phát triển.
