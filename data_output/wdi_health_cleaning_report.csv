@@ -1,0 +1,869 @@
+Country_Code,Country_Name,Indicator_Code,Clean_Name,Observed_Values,Internal_Max_Missing_Gap,Interpolated_Values,Status
+ABW,Aruba,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ABW,Aruba,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+ABW,Aruba,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+ABW,Aruba,SP.POP.TOTL,Population,24,0,0,kept
+AFG,Afghanistan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AFG,Afghanistan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AFG,Afghanistan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,22,0,0,kept
+AFG,Afghanistan,SP.POP.TOTL,Population,24,0,0,kept
+AGO,Angola,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AGO,Angola,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AGO,Angola,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+AGO,Angola,SP.POP.TOTL,Population,24,0,0,kept
+ALB,Albania,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ALB,Albania,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ALB,Albania,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ALB,Albania,SP.POP.TOTL,Population,24,0,0,kept
+AND,Andorra,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AND,Andorra,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AND,Andorra,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+AND,Andorra,SP.POP.TOTL,Population,24,0,0,kept
+ARE,United Arab Emirates,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ARE,United Arab Emirates,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ARE,United Arab Emirates,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ARE,United Arab Emirates,SP.POP.TOTL,Population,24,0,0,kept
+ARG,Argentina,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ARG,Argentina,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ARG,Argentina,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ARG,Argentina,SP.POP.TOTL,Population,24,0,0,kept
+ARM,Armenia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ARM,Armenia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ARM,Armenia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ARM,Armenia,SP.POP.TOTL,Population,24,0,0,kept
+ASM,American Samoa,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ASM,American Samoa,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+ASM,American Samoa,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+ASM,American Samoa,SP.POP.TOTL,Population,24,0,0,kept
+ATG,Antigua and Barbuda,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ATG,Antigua and Barbuda,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ATG,Antigua and Barbuda,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ATG,Antigua and Barbuda,SP.POP.TOTL,Population,24,0,0,kept
+AUS,Australia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AUS,Australia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AUS,Australia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+AUS,Australia,SP.POP.TOTL,Population,24,0,0,kept
+AUT,Austria,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AUT,Austria,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AUT,Austria,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+AUT,Austria,SP.POP.TOTL,Population,24,0,0,kept
+AZE,Azerbaijan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+AZE,Azerbaijan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+AZE,Azerbaijan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+AZE,Azerbaijan,SP.POP.TOTL,Population,24,0,0,kept
+BDI,Burundi,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BDI,Burundi,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BDI,Burundi,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BDI,Burundi,SP.POP.TOTL,Population,24,0,0,kept
+BEL,Belgium,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BEL,Belgium,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BEL,Belgium,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BEL,Belgium,SP.POP.TOTL,Population,24,0,0,kept
+BEN,Benin,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BEN,Benin,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BEN,Benin,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BEN,Benin,SP.POP.TOTL,Population,24,0,0,kept
+BFA,Burkina Faso,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BFA,Burkina Faso,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BFA,Burkina Faso,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BFA,Burkina Faso,SP.POP.TOTL,Population,24,0,0,kept
+BGD,Bangladesh,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BGD,Bangladesh,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BGD,Bangladesh,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BGD,Bangladesh,SP.POP.TOTL,Population,24,0,0,kept
+BGR,Bulgaria,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BGR,Bulgaria,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BGR,Bulgaria,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BGR,Bulgaria,SP.POP.TOTL,Population,24,0,0,kept
+BHR,Bahrain,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BHR,Bahrain,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BHR,Bahrain,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BHR,Bahrain,SP.POP.TOTL,Population,24,0,0,kept
+BHS,"Bahamas, The",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BHS,"Bahamas, The",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BHS,"Bahamas, The",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BHS,"Bahamas, The",SP.POP.TOTL,Population,24,0,0,kept
+BIH,Bosnia and Herzegovina,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BIH,Bosnia and Herzegovina,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BIH,Bosnia and Herzegovina,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BIH,Bosnia and Herzegovina,SP.POP.TOTL,Population,24,0,0,kept
+BLR,Belarus,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BLR,Belarus,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BLR,Belarus,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BLR,Belarus,SP.POP.TOTL,Population,24,0,0,kept
+BLZ,Belize,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BLZ,Belize,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BLZ,Belize,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BLZ,Belize,SP.POP.TOTL,Population,24,0,0,kept
+BMU,Bermuda,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BMU,Bermuda,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+BMU,Bermuda,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+BMU,Bermuda,SP.POP.TOTL,Population,24,0,0,kept
+BOL,Bolivia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BOL,Bolivia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BOL,Bolivia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BOL,Bolivia,SP.POP.TOTL,Population,24,0,0,kept
+BRA,Brazil,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BRA,Brazil,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BRA,Brazil,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BRA,Brazil,SP.POP.TOTL,Population,24,0,0,kept
+BRB,Barbados,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BRB,Barbados,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BRB,Barbados,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BRB,Barbados,SP.POP.TOTL,Population,24,0,0,kept
+BRN,Brunei Darussalam,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BRN,Brunei Darussalam,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BRN,Brunei Darussalam,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BRN,Brunei Darussalam,SP.POP.TOTL,Population,24,0,0,kept
+BTN,Bhutan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BTN,Bhutan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BTN,Bhutan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BTN,Bhutan,SP.POP.TOTL,Population,24,0,0,kept
+BWA,Botswana,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+BWA,Botswana,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+BWA,Botswana,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+BWA,Botswana,SP.POP.TOTL,Population,24,0,0,kept
+CAF,Central African Republic,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CAF,Central African Republic,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CAF,Central African Republic,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CAF,Central African Republic,SP.POP.TOTL,Population,24,0,0,kept
+CAN,Canada,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CAN,Canada,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CAN,Canada,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CAN,Canada,SP.POP.TOTL,Population,24,0,0,kept
+CHE,Switzerland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CHE,Switzerland,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CHE,Switzerland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CHE,Switzerland,SP.POP.TOTL,Population,24,0,0,kept
+CHI,Channel Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CHI,Channel Islands,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+CHI,Channel Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+CHI,Channel Islands,SP.POP.TOTL,Population,24,0,0,kept
+CHL,Chile,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CHL,Chile,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CHL,Chile,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CHL,Chile,SP.POP.TOTL,Population,24,0,0,kept
+CHN,China,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CHN,China,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CHN,China,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CHN,China,SP.POP.TOTL,Population,24,0,0,kept
+CIV,Côte d'Ivoire,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CIV,Côte d'Ivoire,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CIV,Côte d'Ivoire,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CIV,Côte d'Ivoire,SP.POP.TOTL,Population,24,0,0,kept
+CMR,Cameroon,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CMR,Cameroon,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CMR,Cameroon,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CMR,Cameroon,SP.POP.TOTL,Population,24,0,0,kept
+COD,"Congo, Dem. Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+COD,"Congo, Dem. Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+COD,"Congo, Dem. Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+COD,"Congo, Dem. Rep.",SP.POP.TOTL,Population,24,0,0,kept
+COG,"Congo, Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+COG,"Congo, Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+COG,"Congo, Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+COG,"Congo, Rep.",SP.POP.TOTL,Population,24,0,0,kept
+COL,Colombia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+COL,Colombia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+COL,Colombia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+COL,Colombia,SP.POP.TOTL,Population,24,0,0,kept
+COM,Comoros,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+COM,Comoros,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+COM,Comoros,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+COM,Comoros,SP.POP.TOTL,Population,24,0,0,kept
+CPV,Cabo Verde,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CPV,Cabo Verde,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CPV,Cabo Verde,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CPV,Cabo Verde,SP.POP.TOTL,Population,24,0,0,kept
+CRI,Costa Rica,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CRI,Costa Rica,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CRI,Costa Rica,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CRI,Costa Rica,SP.POP.TOTL,Population,24,0,0,kept
+CUB,Cuba,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CUB,Cuba,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CUB,Cuba,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CUB,Cuba,SP.POP.TOTL,Population,24,0,0,kept
+CUW,Curaçao,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CUW,Curaçao,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+CUW,Curaçao,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+CUW,Curaçao,SP.POP.TOTL,Population,24,0,0,kept
+CYM,Cayman Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CYM,Cayman Islands,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+CYM,Cayman Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+CYM,Cayman Islands,SP.POP.TOTL,Population,24,0,0,kept
+CYP,Cyprus,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CYP,Cyprus,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CYP,Cyprus,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CYP,Cyprus,SP.POP.TOTL,Population,24,0,0,kept
+CZE,Czechia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+CZE,Czechia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+CZE,Czechia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+CZE,Czechia,SP.POP.TOTL,Population,24,0,0,kept
+DEU,Germany,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DEU,Germany,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DEU,Germany,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DEU,Germany,SP.POP.TOTL,Population,24,0,0,kept
+DJI,Djibouti,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DJI,Djibouti,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DJI,Djibouti,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DJI,Djibouti,SP.POP.TOTL,Population,24,0,0,kept
+DMA,Dominica,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DMA,Dominica,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DMA,Dominica,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DMA,Dominica,SP.POP.TOTL,Population,24,0,0,kept
+DNK,Denmark,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DNK,Denmark,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DNK,Denmark,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DNK,Denmark,SP.POP.TOTL,Population,24,0,0,kept
+DOM,Dominican Republic,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DOM,Dominican Republic,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DOM,Dominican Republic,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DOM,Dominican Republic,SP.POP.TOTL,Population,24,0,0,kept
+DZA,Algeria,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+DZA,Algeria,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+DZA,Algeria,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+DZA,Algeria,SP.POP.TOTL,Population,24,0,0,kept
+ECU,Ecuador,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ECU,Ecuador,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ECU,Ecuador,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ECU,Ecuador,SP.POP.TOTL,Population,24,0,0,kept
+EGY,"Egypt, Arab Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+EGY,"Egypt, Arab Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+EGY,"Egypt, Arab Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+EGY,"Egypt, Arab Rep.",SP.POP.TOTL,Population,24,0,0,kept
+ERI,Eritrea,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ERI,Eritrea,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ERI,Eritrea,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ERI,Eritrea,SP.POP.TOTL,Population,24,0,0,kept
+ESP,Spain,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ESP,Spain,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ESP,Spain,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ESP,Spain,SP.POP.TOTL,Population,24,0,0,kept
+EST,Estonia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+EST,Estonia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+EST,Estonia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+EST,Estonia,SP.POP.TOTL,Population,24,0,0,kept
+ETH,Ethiopia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ETH,Ethiopia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ETH,Ethiopia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ETH,Ethiopia,SP.POP.TOTL,Population,24,0,0,kept
+FIN,Finland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+FIN,Finland,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+FIN,Finland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+FIN,Finland,SP.POP.TOTL,Population,24,0,0,kept
+FJI,Fiji,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+FJI,Fiji,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+FJI,Fiji,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+FJI,Fiji,SP.POP.TOTL,Population,24,0,0,kept
+FRA,France,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+FRA,France,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+FRA,France,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+FRA,France,SP.POP.TOTL,Population,24,0,0,kept
+FRO,Faroe Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+FRO,Faroe Islands,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+FRO,Faroe Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+FRO,Faroe Islands,SP.POP.TOTL,Population,24,0,0,kept
+FSM,"Micronesia, Fed. Sts.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+FSM,"Micronesia, Fed. Sts.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+FSM,"Micronesia, Fed. Sts.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+FSM,"Micronesia, Fed. Sts.",SP.POP.TOTL,Population,24,0,0,kept
+GAB,Gabon,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GAB,Gabon,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GAB,Gabon,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GAB,Gabon,SP.POP.TOTL,Population,24,0,0,kept
+GBR,United Kingdom,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GBR,United Kingdom,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GBR,United Kingdom,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GBR,United Kingdom,SP.POP.TOTL,Population,24,0,0,kept
+GEO,Georgia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GEO,Georgia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GEO,Georgia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GEO,Georgia,SP.POP.TOTL,Population,24,0,0,kept
+GHA,Ghana,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GHA,Ghana,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GHA,Ghana,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GHA,Ghana,SP.POP.TOTL,Population,24,0,0,kept
+GIB,Gibraltar,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GIB,Gibraltar,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+GIB,Gibraltar,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+GIB,Gibraltar,SP.POP.TOTL,Population,24,0,0,kept
+GIN,Guinea,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GIN,Guinea,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GIN,Guinea,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GIN,Guinea,SP.POP.TOTL,Population,24,0,0,kept
+GMB,"Gambia, The",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GMB,"Gambia, The",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GMB,"Gambia, The",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GMB,"Gambia, The",SP.POP.TOTL,Population,24,0,0,kept
+GNB,Guinea-Bissau,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GNB,Guinea-Bissau,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GNB,Guinea-Bissau,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GNB,Guinea-Bissau,SP.POP.TOTL,Population,24,0,0,kept
+GNQ,Equatorial Guinea,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GNQ,Equatorial Guinea,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GNQ,Equatorial Guinea,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GNQ,Equatorial Guinea,SP.POP.TOTL,Population,24,0,0,kept
+GRC,Greece,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GRC,Greece,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GRC,Greece,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GRC,Greece,SP.POP.TOTL,Population,24,0,0,kept
+GRD,Grenada,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GRD,Grenada,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GRD,Grenada,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GRD,Grenada,SP.POP.TOTL,Population,24,0,0,kept
+GRL,Greenland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GRL,Greenland,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+GRL,Greenland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+GRL,Greenland,SP.POP.TOTL,Population,24,0,0,kept
+GTM,Guatemala,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GTM,Guatemala,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GTM,Guatemala,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GTM,Guatemala,SP.POP.TOTL,Population,24,0,0,kept
+GUM,Guam,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GUM,Guam,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+GUM,Guam,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+GUM,Guam,SP.POP.TOTL,Population,24,0,0,kept
+GUY,Guyana,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+GUY,Guyana,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+GUY,Guyana,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+GUY,Guyana,SP.POP.TOTL,Population,24,0,0,kept
+HKG,"Hong Kong SAR, China",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+HKG,"Hong Kong SAR, China",SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+HKG,"Hong Kong SAR, China",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+HKG,"Hong Kong SAR, China",SP.POP.TOTL,Population,24,0,0,kept
+HND,Honduras,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+HND,Honduras,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+HND,Honduras,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+HND,Honduras,SP.POP.TOTL,Population,24,0,0,kept
+HRV,Croatia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+HRV,Croatia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+HRV,Croatia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+HRV,Croatia,SP.POP.TOTL,Population,24,0,0,kept
+HTI,Haiti,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+HTI,Haiti,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+HTI,Haiti,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+HTI,Haiti,SP.POP.TOTL,Population,24,0,0,kept
+HUN,Hungary,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+HUN,Hungary,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+HUN,Hungary,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+HUN,Hungary,SP.POP.TOTL,Population,24,0,0,kept
+IDN,Indonesia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IDN,Indonesia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+IDN,Indonesia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+IDN,Indonesia,SP.POP.TOTL,Population,24,0,0,kept
+IMN,Isle of Man,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IMN,Isle of Man,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+IMN,Isle of Man,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+IMN,Isle of Man,SP.POP.TOTL,Population,24,0,0,kept
+IND,India,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IND,India,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+IND,India,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+IND,India,SP.POP.TOTL,Population,24,0,0,kept
+IRL,Ireland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IRL,Ireland,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+IRL,Ireland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+IRL,Ireland,SP.POP.TOTL,Population,24,0,0,kept
+IRN,"Iran, Islamic Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IRN,"Iran, Islamic Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+IRN,"Iran, Islamic Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+IRN,"Iran, Islamic Rep.",SP.POP.TOTL,Population,24,0,0,kept
+IRQ,Iraq,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+IRQ,Iraq,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+IRQ,Iraq,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,21,0,0,kept
+IRQ,Iraq,SP.POP.TOTL,Population,24,0,0,kept
+ISL,Iceland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ISL,Iceland,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ISL,Iceland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ISL,Iceland,SP.POP.TOTL,Population,24,0,0,kept
+ISR,Israel,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ISR,Israel,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ISR,Israel,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ISR,Israel,SP.POP.TOTL,Population,24,0,0,kept
+ITA,Italy,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ITA,Italy,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ITA,Italy,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ITA,Italy,SP.POP.TOTL,Population,24,0,0,kept
+JAM,Jamaica,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+JAM,Jamaica,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+JAM,Jamaica,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+JAM,Jamaica,SP.POP.TOTL,Population,24,0,0,kept
+JOR,Jordan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+JOR,Jordan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+JOR,Jordan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+JOR,Jordan,SP.POP.TOTL,Population,24,0,0,kept
+JPN,Japan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+JPN,Japan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+JPN,Japan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+JPN,Japan,SP.POP.TOTL,Population,24,0,0,kept
+KAZ,Kazakhstan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KAZ,Kazakhstan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KAZ,Kazakhstan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KAZ,Kazakhstan,SP.POP.TOTL,Population,24,0,0,kept
+KEN,Kenya,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KEN,Kenya,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KEN,Kenya,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KEN,Kenya,SP.POP.TOTL,Population,24,0,0,kept
+KGZ,Kyrgyz Republic,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KGZ,Kyrgyz Republic,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KGZ,Kyrgyz Republic,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KGZ,Kyrgyz Republic,SP.POP.TOTL,Population,24,0,0,kept
+KHM,Cambodia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KHM,Cambodia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KHM,Cambodia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KHM,Cambodia,SP.POP.TOTL,Population,24,0,0,kept
+KIR,Kiribati,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KIR,Kiribati,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KIR,Kiribati,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KIR,Kiribati,SP.POP.TOTL,Population,24,0,0,kept
+KNA,St. Kitts and Nevis,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KNA,St. Kitts and Nevis,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KNA,St. Kitts and Nevis,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KNA,St. Kitts and Nevis,SP.POP.TOTL,Population,24,0,0,kept
+KOR,"Korea, Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KOR,"Korea, Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KOR,"Korea, Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KOR,"Korea, Rep.",SP.POP.TOTL,Population,24,0,0,kept
+KWT,Kuwait,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+KWT,Kuwait,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+KWT,Kuwait,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+KWT,Kuwait,SP.POP.TOTL,Population,24,0,0,kept
+LAO,Lao PDR,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LAO,Lao PDR,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LAO,Lao PDR,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LAO,Lao PDR,SP.POP.TOTL,Population,24,0,0,kept
+LBN,Lebanon,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LBN,Lebanon,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LBN,Lebanon,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LBN,Lebanon,SP.POP.TOTL,Population,24,0,0,kept
+LBR,Liberia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LBR,Liberia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LBR,Liberia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LBR,Liberia,SP.POP.TOTL,Population,24,0,0,kept
+LBY,Libya,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LBY,Libya,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LBY,Libya,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LBY,Libya,SP.POP.TOTL,Population,24,0,0,kept
+LCA,St. Lucia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LCA,St. Lucia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LCA,St. Lucia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LCA,St. Lucia,SP.POP.TOTL,Population,24,0,0,kept
+LIE,Liechtenstein,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LIE,Liechtenstein,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+LIE,Liechtenstein,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,11,0,0,kept
+LIE,Liechtenstein,SP.POP.TOTL,Population,24,0,0,kept
+LKA,Sri Lanka,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LKA,Sri Lanka,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LKA,Sri Lanka,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LKA,Sri Lanka,SP.POP.TOTL,Population,24,0,0,kept
+LSO,Lesotho,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LSO,Lesotho,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LSO,Lesotho,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LSO,Lesotho,SP.POP.TOTL,Population,24,0,0,kept
+LTU,Lithuania,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LTU,Lithuania,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LTU,Lithuania,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LTU,Lithuania,SP.POP.TOTL,Population,24,0,0,kept
+LUX,Luxembourg,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LUX,Luxembourg,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LUX,Luxembourg,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LUX,Luxembourg,SP.POP.TOTL,Population,24,0,0,kept
+LVA,Latvia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+LVA,Latvia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+LVA,Latvia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+LVA,Latvia,SP.POP.TOTL,Population,24,0,0,kept
+MAC,"Macao SAR, China",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MAC,"Macao SAR, China",SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+MAC,"Macao SAR, China",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+MAC,"Macao SAR, China",SP.POP.TOTL,Population,24,0,0,kept
+MAF,St. Martin (French part),SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MAF,St. Martin (French part),SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+MAF,St. Martin (French part),SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+MAF,St. Martin (French part),SP.POP.TOTL,Population,24,0,0,kept
+MAR,Morocco,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MAR,Morocco,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MAR,Morocco,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MAR,Morocco,SP.POP.TOTL,Population,24,0,0,kept
+MCO,Monaco,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MCO,Monaco,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MCO,Monaco,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MCO,Monaco,SP.POP.TOTL,Population,24,0,0,kept
+MDA,Moldova,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MDA,Moldova,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MDA,Moldova,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MDA,Moldova,SP.POP.TOTL,Population,24,0,0,kept
+MDG,Madagascar,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MDG,Madagascar,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MDG,Madagascar,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MDG,Madagascar,SP.POP.TOTL,Population,24,0,0,kept
+MDV,Maldives,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MDV,Maldives,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MDV,Maldives,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MDV,Maldives,SP.POP.TOTL,Population,24,0,0,kept
+MEX,Mexico,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MEX,Mexico,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MEX,Mexico,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MEX,Mexico,SP.POP.TOTL,Population,24,0,0,kept
+MHL,Marshall Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MHL,Marshall Islands,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MHL,Marshall Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MHL,Marshall Islands,SP.POP.TOTL,Population,24,0,0,kept
+MKD,North Macedonia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MKD,North Macedonia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MKD,North Macedonia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MKD,North Macedonia,SP.POP.TOTL,Population,24,0,0,kept
+MLI,Mali,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MLI,Mali,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MLI,Mali,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MLI,Mali,SP.POP.TOTL,Population,24,0,0,kept
+MLT,Malta,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MLT,Malta,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MLT,Malta,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MLT,Malta,SP.POP.TOTL,Population,24,0,0,kept
+MMR,Myanmar,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MMR,Myanmar,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MMR,Myanmar,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MMR,Myanmar,SP.POP.TOTL,Population,24,0,0,kept
+MNE,Montenegro,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MNE,Montenegro,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MNE,Montenegro,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,13,0,0,kept
+MNE,Montenegro,SP.POP.TOTL,Population,24,0,0,kept
+MNG,Mongolia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MNG,Mongolia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MNG,Mongolia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MNG,Mongolia,SP.POP.TOTL,Population,24,0,0,kept
+MNP,Northern Mariana Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MNP,Northern Mariana Islands,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+MNP,Northern Mariana Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+MNP,Northern Mariana Islands,SP.POP.TOTL,Population,24,0,0,kept
+MOZ,Mozambique,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MOZ,Mozambique,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MOZ,Mozambique,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MOZ,Mozambique,SP.POP.TOTL,Population,24,0,0,kept
+MRT,Mauritania,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MRT,Mauritania,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MRT,Mauritania,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MRT,Mauritania,SP.POP.TOTL,Population,24,0,0,kept
+MUS,Mauritius,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MUS,Mauritius,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MUS,Mauritius,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MUS,Mauritius,SP.POP.TOTL,Population,24,0,0,kept
+MWI,Malawi,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MWI,Malawi,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MWI,Malawi,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MWI,Malawi,SP.POP.TOTL,Population,24,0,0,kept
+MYS,Malaysia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+MYS,Malaysia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+MYS,Malaysia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+MYS,Malaysia,SP.POP.TOTL,Population,24,0,0,kept
+NAM,Namibia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NAM,Namibia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NAM,Namibia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NAM,Namibia,SP.POP.TOTL,Population,24,0,0,kept
+NCL,New Caledonia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NCL,New Caledonia,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+NCL,New Caledonia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+NCL,New Caledonia,SP.POP.TOTL,Population,24,0,0,kept
+NER,Niger,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NER,Niger,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NER,Niger,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NER,Niger,SP.POP.TOTL,Population,24,0,0,kept
+NGA,Nigeria,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NGA,Nigeria,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NGA,Nigeria,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NGA,Nigeria,SP.POP.TOTL,Population,24,0,0,kept
+NIC,Nicaragua,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NIC,Nicaragua,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NIC,Nicaragua,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NIC,Nicaragua,SP.POP.TOTL,Population,24,0,0,kept
+NLD,Netherlands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NLD,Netherlands,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NLD,Netherlands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NLD,Netherlands,SP.POP.TOTL,Population,24,0,0,kept
+NOR,Norway,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NOR,Norway,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NOR,Norway,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NOR,Norway,SP.POP.TOTL,Population,24,0,0,kept
+NPL,Nepal,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NPL,Nepal,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NPL,Nepal,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NPL,Nepal,SP.POP.TOTL,Population,24,0,0,kept
+NRU,Nauru,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NRU,Nauru,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NRU,Nauru,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NRU,Nauru,SP.POP.TOTL,Population,24,0,0,kept
+NZL,New Zealand,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+NZL,New Zealand,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+NZL,New Zealand,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+NZL,New Zealand,SP.POP.TOTL,Population,24,0,0,kept
+OMN,Oman,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+OMN,Oman,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+OMN,Oman,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+OMN,Oman,SP.POP.TOTL,Population,24,0,0,kept
+PAK,Pakistan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PAK,Pakistan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PAK,Pakistan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PAK,Pakistan,SP.POP.TOTL,Population,24,0,0,kept
+PAN,Panama,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PAN,Panama,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PAN,Panama,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PAN,Panama,SP.POP.TOTL,Population,24,0,0,kept
+PER,Peru,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PER,Peru,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PER,Peru,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PER,Peru,SP.POP.TOTL,Population,24,0,0,kept
+PHL,Philippines,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PHL,Philippines,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PHL,Philippines,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PHL,Philippines,SP.POP.TOTL,Population,24,0,0,kept
+PLW,Palau,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PLW,Palau,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PLW,Palau,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PLW,Palau,SP.POP.TOTL,Population,24,0,0,kept
+PNG,Papua New Guinea,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PNG,Papua New Guinea,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PNG,Papua New Guinea,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PNG,Papua New Guinea,SP.POP.TOTL,Population,24,0,0,kept
+POL,Poland,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+POL,Poland,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+POL,Poland,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+POL,Poland,SP.POP.TOTL,Population,24,0,0,kept
+PRI,Puerto Rico (US),SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PRI,Puerto Rico (US),SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+PRI,Puerto Rico (US),SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+PRI,Puerto Rico (US),SP.POP.TOTL,Population,24,0,0,kept
+PRK,"Korea, Dem. People's Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PRK,"Korea, Dem. People's Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PRK,"Korea, Dem. People's Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+PRK,"Korea, Dem. People's Rep.",SP.POP.TOTL,Population,24,0,0,kept
+PRT,Portugal,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PRT,Portugal,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PRT,Portugal,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PRT,Portugal,SP.POP.TOTL,Population,24,0,0,kept
+PRY,Paraguay,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PRY,Paraguay,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PRY,Paraguay,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PRY,Paraguay,SP.POP.TOTL,Population,24,0,0,kept
+PSE,West Bank and Gaza,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PSE,West Bank and Gaza,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+PSE,West Bank and Gaza,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+PSE,West Bank and Gaza,SP.POP.TOTL,Population,24,0,0,kept
+PYF,French Polynesia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+PYF,French Polynesia,SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+PYF,French Polynesia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+PYF,French Polynesia,SP.POP.TOTL,Population,24,0,0,kept
+QAT,Qatar,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+QAT,Qatar,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+QAT,Qatar,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+QAT,Qatar,SP.POP.TOTL,Population,24,0,0,kept
+ROU,Romania,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ROU,Romania,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ROU,Romania,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ROU,Romania,SP.POP.TOTL,Population,24,0,0,kept
+RUS,Russian Federation,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+RUS,Russian Federation,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+RUS,Russian Federation,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+RUS,Russian Federation,SP.POP.TOTL,Population,24,0,0,kept
+RWA,Rwanda,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+RWA,Rwanda,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+RWA,Rwanda,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+RWA,Rwanda,SP.POP.TOTL,Population,24,0,0,kept
+SAU,Saudi Arabia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SAU,Saudi Arabia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SAU,Saudi Arabia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SAU,Saudi Arabia,SP.POP.TOTL,Population,24,0,0,kept
+SDN,Sudan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SDN,Sudan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SDN,Sudan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SDN,Sudan,SP.POP.TOTL,Population,24,0,0,kept
+SEN,Senegal,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SEN,Senegal,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SEN,Senegal,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SEN,Senegal,SP.POP.TOTL,Population,24,0,0,kept
+SGP,Singapore,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SGP,Singapore,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SGP,Singapore,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SGP,Singapore,SP.POP.TOTL,Population,24,0,0,kept
+SLB,Solomon Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SLB,Solomon Islands,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SLB,Solomon Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SLB,Solomon Islands,SP.POP.TOTL,Population,24,0,0,kept
+SLE,Sierra Leone,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SLE,Sierra Leone,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SLE,Sierra Leone,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SLE,Sierra Leone,SP.POP.TOTL,Population,24,0,0,kept
+SLV,El Salvador,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SLV,El Salvador,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SLV,El Salvador,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SLV,El Salvador,SP.POP.TOTL,Population,24,0,0,kept
+SMR,San Marino,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SMR,San Marino,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SMR,San Marino,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SMR,San Marino,SP.POP.TOTL,Population,24,0,0,kept
+SOM,"Somalia, Fed. Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SOM,"Somalia, Fed. Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SOM,"Somalia, Fed. Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,11,0,0,kept
+SOM,"Somalia, Fed. Rep.",SP.POP.TOTL,Population,24,0,0,kept
+SRB,Serbia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SRB,Serbia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SRB,Serbia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SRB,Serbia,SP.POP.TOTL,Population,24,0,0,kept
+SSD,South Sudan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SSD,South Sudan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SSD,South Sudan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,7,0,0,kept
+SSD,South Sudan,SP.POP.TOTL,Population,24,0,0,kept
+STP,São Tomé and Principe,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+STP,São Tomé and Principe,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+STP,São Tomé and Principe,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+STP,São Tomé and Principe,SP.POP.TOTL,Population,24,0,0,kept
+SUR,Suriname,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SUR,Suriname,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SUR,Suriname,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SUR,Suriname,SP.POP.TOTL,Population,24,0,0,kept
+SVK,Slovak Republic,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SVK,Slovak Republic,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SVK,Slovak Republic,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SVK,Slovak Republic,SP.POP.TOTL,Population,24,0,0,kept
+SVN,Slovenia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SVN,Slovenia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SVN,Slovenia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SVN,Slovenia,SP.POP.TOTL,Population,24,0,0,kept
+SWE,Sweden,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SWE,Sweden,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SWE,Sweden,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SWE,Sweden,SP.POP.TOTL,Population,24,0,0,kept
+SWZ,Eswatini,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SWZ,Eswatini,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SWZ,Eswatini,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SWZ,Eswatini,SP.POP.TOTL,Population,24,0,0,kept
+SXM,Sint Maarten (Dutch part),SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SXM,Sint Maarten (Dutch part),SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+SXM,Sint Maarten (Dutch part),SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+SXM,Sint Maarten (Dutch part),SP.POP.TOTL,Population,24,0,0,kept
+SYC,Seychelles,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SYC,Seychelles,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SYC,Seychelles,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SYC,Seychelles,SP.POP.TOTL,Population,24,0,0,kept
+SYR,Syrian Arab Republic,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+SYR,Syrian Arab Republic,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+SYR,Syrian Arab Republic,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+SYR,Syrian Arab Republic,SP.POP.TOTL,Population,24,0,0,kept
+TCA,Turks and Caicos Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TCA,Turks and Caicos Islands,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TCA,Turks and Caicos Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+TCA,Turks and Caicos Islands,SP.POP.TOTL,Population,24,0,0,kept
+TCD,Chad,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TCD,Chad,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TCD,Chad,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TCD,Chad,SP.POP.TOTL,Population,24,0,0,kept
+TGO,Togo,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TGO,Togo,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TGO,Togo,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TGO,Togo,SP.POP.TOTL,Population,24,0,0,kept
+THA,Thailand,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+THA,Thailand,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+THA,Thailand,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+THA,Thailand,SP.POP.TOTL,Population,24,0,0,kept
+TJK,Tajikistan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TJK,Tajikistan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TJK,Tajikistan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TJK,Tajikistan,SP.POP.TOTL,Population,24,0,0,kept
+TKM,Turkmenistan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TKM,Turkmenistan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TKM,Turkmenistan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TKM,Turkmenistan,SP.POP.TOTL,Population,24,0,0,kept
+TLS,Timor-Leste,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TLS,Timor-Leste,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TLS,Timor-Leste,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,21,0,0,kept
+TLS,Timor-Leste,SP.POP.TOTL,Population,24,0,0,kept
+TON,Tonga,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TON,Tonga,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TON,Tonga,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TON,Tonga,SP.POP.TOTL,Population,24,0,0,kept
+TTO,Trinidad and Tobago,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TTO,Trinidad and Tobago,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TTO,Trinidad and Tobago,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TTO,Trinidad and Tobago,SP.POP.TOTL,Population,24,0,0,kept
+TUN,Tunisia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TUN,Tunisia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TUN,Tunisia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TUN,Tunisia,SP.POP.TOTL,Population,24,0,0,kept
+TUR,Türkiye,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TUR,Türkiye,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TUR,Türkiye,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TUR,Türkiye,SP.POP.TOTL,Population,24,0,0,kept
+TUV,Tuvalu,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TUV,Tuvalu,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TUV,Tuvalu,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TUV,Tuvalu,SP.POP.TOTL,Population,24,0,0,kept
+TZA,Tanzania,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+TZA,Tanzania,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+TZA,Tanzania,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+TZA,Tanzania,SP.POP.TOTL,Population,24,0,0,kept
+UGA,Uganda,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+UGA,Uganda,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+UGA,Uganda,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+UGA,Uganda,SP.POP.TOTL,Population,24,0,0,kept
+UKR,Ukraine,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+UKR,Ukraine,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+UKR,Ukraine,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,22,0,0,kept
+UKR,Ukraine,SP.POP.TOTL,Population,24,0,0,kept
+URY,Uruguay,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+URY,Uruguay,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+URY,Uruguay,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+URY,Uruguay,SP.POP.TOTL,Population,24,0,0,kept
+USA,United States,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+USA,United States,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+USA,United States,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+USA,United States,SP.POP.TOTL,Population,24,0,0,kept
+UZB,Uzbekistan,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+UZB,Uzbekistan,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+UZB,Uzbekistan,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+UZB,Uzbekistan,SP.POP.TOTL,Population,24,0,0,kept
+VCT,St. Vincent and the Grenadines,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VCT,St. Vincent and the Grenadines,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+VCT,St. Vincent and the Grenadines,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+VCT,St. Vincent and the Grenadines,SP.POP.TOTL,Population,24,0,0,kept
+VEN,"Venezuela, RB",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VEN,"Venezuela, RB",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+VEN,"Venezuela, RB",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,6,0,0,kept
+VEN,"Venezuela, RB",SP.POP.TOTL,Population,24,0,0,kept
+VGB,British Virgin Islands,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VGB,British Virgin Islands,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+VGB,British Virgin Islands,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+VGB,British Virgin Islands,SP.POP.TOTL,Population,24,0,0,kept
+VIR,Virgin Islands (US),SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VIR,Virgin Islands (US),SH.DYN.MORT,Under5_mortality,0,24,0,dropped_no_observation
+VIR,Virgin Islands (US),SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+VIR,Virgin Islands (US),SP.POP.TOTL,Population,24,0,0,kept
+VNM,Viet Nam,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VNM,Viet Nam,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+VNM,Viet Nam,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+VNM,Viet Nam,SP.POP.TOTL,Population,24,0,0,kept
+VUT,Vanuatu,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+VUT,Vanuatu,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+VUT,Vanuatu,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+VUT,Vanuatu,SP.POP.TOTL,Population,24,0,0,kept
+WSM,Samoa,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+WSM,Samoa,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+WSM,Samoa,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+WSM,Samoa,SP.POP.TOTL,Population,24,0,0,kept
+XKX,Kosovo,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+XKX,Kosovo,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+XKX,Kosovo,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,0,24,0,dropped_no_observation
+XKX,Kosovo,SP.POP.TOTL,Population,24,0,0,kept
+YEM,"Yemen, Rep.",SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+YEM,"Yemen, Rep.",SH.DYN.MORT,Under5_mortality,24,0,0,kept
+YEM,"Yemen, Rep.",SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+YEM,"Yemen, Rep.",SP.POP.TOTL,Population,24,0,0,kept
+ZAF,South Africa,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ZAF,South Africa,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ZAF,South Africa,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ZAF,South Africa,SP.POP.TOTL,Population,24,0,0,kept
+ZMB,Zambia,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ZMB,Zambia,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ZMB,Zambia,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,24,0,0,kept
+ZMB,Zambia,SP.POP.TOTL,Population,24,0,0,kept
+ZWE,Zimbabwe,SP.DYN.LE00.IN,Life_expectancy,24,0,0,kept
+ZWE,Zimbabwe,SH.DYN.MORT,Under5_mortality,24,0,0,kept
+ZWE,Zimbabwe,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,14,0,0,kept
+ZWE,Zimbabwe,SP.POP.TOTL,Population,24,0,0,kept

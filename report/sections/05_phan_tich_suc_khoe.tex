@@ -2,8 +2,134 @@
 
 \subsection{Vai trò trong bài toán chung}
 
-Phần sức khỏe và dân số đánh giá kết quả phát triển ở cấp độ đời sống con người. Nếu kinh tế phản ánh nguồn lực, thì tuổi thọ, tử vong trẻ em, chi tiêu y tế và dân số cho biết nguồn lực đó có chuyển hóa thành cải thiện phúc lợi xã hội hay không.
+Phần sức khỏe và dân số đánh giá kết quả phát triển ở cấp độ đời sống con người. Nếu kinh tế phản ánh nguồn lực, thì tuổi thọ, tử vong trẻ em, chi tiêu y tế và dân số cho biết nguồn lực đó có chuyển hóa thành cải thiện phúc lợi xã hội hay không. Đây là mục tiêu phân tích thứ ba của nhóm, do Nguyễn Lê Thế Vinh phụ trách.
 
-\subsection{Câu hỏi phân tích và kế hoạch trực quan hóa}
+\subsection{Câu hỏi phân tích}
 
-Phân tích sức khỏe và dân số đặt trọng tâm vào sự thay đổi của tuổi thọ trung bình, tỷ lệ tử vong trẻ em và mối liên hệ giữa chi tiêu y tế với kết quả sức khỏe. Biểu đồ đường nhiều nhóm sẽ được dùng để theo dõi tuổi thọ theo thời gian, biểu đồ cột để so sánh tử vong trẻ em giữa các khu vực, bubble scatter plot để kết hợp chi tiêu y tế, tuổi thọ và quy mô dân số, còn box plot dùng để mô tả phân bố tuổi thọ theo khu vực. Khi diễn giải, cần phân biệt rõ mô tả tương quan với kết luận nhân quả, đặc biệt vì các chỉ số sức khỏe chịu ảnh hưởng của nhiều yếu tố ngoài chi tiêu y tế.
+Phân tích sức khỏe và dân số tập trung vào ba câu hỏi chính:
+
+\begin{enumerate}
+    \item Tuổi thọ trung bình và tỷ lệ tử vong trẻ em dưới 5 tuổi thay đổi ra sao trong giai đoạn 2000--2023?
+    \item Chi tiêu y tế (tính theo \% GDP) có mối liên hệ như thế nào với kết quả sức khỏe?
+    \item Đại dịch COVID-19 (2020--2021) tác động thế nào lên tuổi thọ trung bình toàn cầu?
+\end{enumerate}
+
+\subsection{Chỉ số sử dụng (Indicators)}
+
+Bốn chỉ số WDI được chọn cho mục tiêu này:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Mã WDI} & \textbf{Tên cột output} & \textbf{Ý nghĩa} & \textbf{Đơn vị} \\
+\hline
+SP.DYN.LE00.IN & Life\_expectancy & Tuổi thọ trung bình tính từ lúc sinh & years \\
+\hline
+SH.DYN.MORT & Under5\_mortality & Tỷ lệ tử vong trẻ em dưới 5 tuổi & per 1,000 \\
+\hline
+SH.XPD.CHEX.GD.ZS & Health\_expenditure\_pct\_GDP & Chi tiêu y tế hiện thời & \% of GDP \\
+\hline
+SP.POP.TOTL & Population & Tổng dân số & people \\
+\hline
+\end{tabular}
+\caption{Các chỉ số WDI dùng cho phân tích sức khỏe và dân số.}
+\label{tab:health_indicators}
+\end{table}
+
+\textbf{Lý do chọn:} Life expectancy là thước đo ``outcome'' tổng hợp phản ánh chất lượng y tế và điều kiện sống. Under-5 mortality tập trung vào nhóm dân số dễ bị tổn thương nhất và là mục tiêu SDG 3.2. Health expenditure đo mức đầu tư ``input'', giúp phân tích mối liên hệ giữa đầu tư và kết quả. Population dùng làm biến kích thước trong bubble chart.
+
+\subsection{Tiền xử lý dữ liệu}
+
+Dữ liệu được trích xuất từ file \texttt{WDIEXCEL.xlsx} bằng Python (pandas, numpy). Quy trình:
+
+\begin{itemize}
+    \item Lọc 4 indicators theo mã WDI, giai đoạn 2000--2023, chỉ giữ quốc gia thật (loại bỏ 48 aggregate rows).
+    \item Xử lý missing values: nội suy tuyến tính nếu khoảng trống nội bộ $\leq$ 2 năm; loại cặp country--indicator nếu khoảng trống $>$ 2 năm.
+    \item Chuẩn hóa tên cột và xuất file \texttt{wdi\_health.csv} (5.208 dòng, 217 quốc gia).
+\end{itemize}
+
+\subsection{Trực quan hóa và nhận xét}
+
+% ======================================================================
+\subsubsection{Biểu đồ 1 --- Xu hướng tuổi thọ trung bình (Multi-line chart)}
+
+% TODO: Thay đường dẫn ảnh sau khi chụp từ Tableau
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/health_01_life_expectancy_trend.png}
+    \caption{Xu hướng tuổi thọ trung bình của các quốc gia đại diện, 2000--2023.}
+    \label{fig:health_le_trend}
+\end{figure}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Tuổi thọ trung bình tăng đều ở hầu hết các quốc gia trong giai đoạn 2000--2019, phản ánh sự cải thiện liên tục của hệ thống y tế và điều kiện sống toàn cầu.
+    \item Đại dịch COVID-19 (2020--2021) gây sụt giảm rõ ở nhiều quốc gia, đặc biệt ở khu vực Mỹ Latinh và Nam Á. Sau năm 2021, phần lớn đã phục hồi.
+    \item Khoảng cách tuổi thọ giữa Sub-Saharan Africa ($\sim$55--60 năm) và các khu vực phát triển như châu Âu, Đông Á ($\sim$75--85 năm) vẫn rất lớn, cho thấy bất bình đẳng sức khỏe toàn cầu chưa được thu hẹp đáng kể.
+    \item Nhật Bản và các nước Tây Âu duy trì vị trí đứng đầu, trong khi Nigeria và Chad thường ở nhóm thấp nhất.
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 2 --- Tỷ lệ tử vong trẻ em theo khu vực (Bar chart)}
+
+% TODO: Thay đường dẫn ảnh sau khi chụp từ Tableau
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/health_02_under5_mortality_bar.png}
+    \caption{Tỷ lệ tử vong trẻ em dưới 5 tuổi trung bình theo khu vực, năm 2022.}
+    \label{fig:health_mortality_bar}
+\end{figure}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Sub-Saharan Africa có tỷ lệ tử vong trẻ em cao nhất, phản ánh thách thức lớn về y tế cơ bản, dinh dưỡng và vệ sinh ở khu vực này.
+    \item So sánh với dữ liệu năm 2000, tất cả các khu vực đều có mức giảm đáng kể. South Asia ghi nhận mức giảm ấn tượng nhất (từ $\sim$90 xuống $\sim$30 per 1,000 live births).
+    \item Europe \& Central Asia và North America đã đạt mức rất thấp ($<$10 per 1,000), cho thấy hệ thống y tế cơ bản đã phát triển hoàn thiện.
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 3 --- Chi tiêu y tế vs Tuổi thọ (Bubble scatter plot)}
+
+% TODO: Thay đường dẫn ảnh sau khi chụp từ Tableau
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/health_03_bubble_scatter.png}
+    \caption{Mối liên hệ giữa chi tiêu y tế (\% GDP) và tuổi thọ trung bình, năm 2022. Kích thước bong bóng tỷ lệ với dân số.}
+    \label{fig:health_bubble}
+\end{figure}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Xu hướng dương tổng thể: các quốc gia chi tiêu y tế cao thường có tuổi thọ cao hơn.
+    \item Tuy nhiên, mối quan hệ \textbf{không tuyến tính}. Ví dụ: Hoa Kỳ chi tiêu $\sim$17\% GDP cho y tế nhưng tuổi thọ thấp hơn Nhật Bản ($\sim$11\% GDP). Nguyên nhân có thể liên quan đến cấu trúc hệ thống y tế, bất bình đẳng tiếp cận dịch vụ, và lối sống.
+    \item Các nước Sub-Saharan Africa tập trung ở góc trái--dưới (chi tiêu thấp, tuổi thọ thấp), tạo thành cụm rõ rệt.
+    \item \textbf{Lưu ý quan trọng:} Biểu đồ chỉ mô tả \emph{tương quan} (correlation), không kết luận \emph{nhân quả} (causation). Chi tiêu y tế cao không nhất thiết \emph{gây ra} tuổi thọ cao — nhiều yếu tố khác như thu nhập, giáo dục, cơ sở hạ tầng cũng đóng vai trò quan trọng.
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 4 --- Phân bố tuổi thọ theo khu vực (Box plot)}
+
+% TODO: Thay đường dẫn ảnh sau khi chụp từ Tableau
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/health_04_boxplot.png}
+    \caption{Phân bố tuổi thọ trung bình theo khu vực, giai đoạn 2000--2023.}
+    \label{fig:health_boxplot}
+\end{figure}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Sub-Saharan Africa có phân bố rộng nhất (spread lớn), cho thấy mức bất bình đẳng sức khỏe lớn giữa các quốc gia trong khu vực. Một số quốc gia đạt tuổi thọ $\sim$70 năm trong khi một số khác chỉ $\sim$50 năm.
+    \item Europe \& Central Asia có median cao nhất và phân bố hẹp --- các quốc gia khá đồng đều về kết quả sức khỏe.
+    \item South Asia có median trung bình nhưng spread khá hẹp do ít quốc gia trong khu vực.
+    \item Các outlier thú vị: một số quốc đảo nhỏ hoặc quốc gia đang trong xung đột có tuổi thọ thấp bất thường so với khu vực.
+\end{itemize}
+
+\subsection{Kết luận mục tiêu sức khỏe và dân số}
+
+Phân tích sức khỏe và dân số cho thấy bức tranh tích cực nhìn chung: tuổi thọ tăng, tử vong trẻ em giảm trên phạm vi toàn cầu trong hơn hai thập kỷ qua. Tuy nhiên, khoảng cách giữa các khu vực vẫn rất lớn, đặc biệt giữa Sub-Saharan Africa và phần còn lại của thế giới.
+
+Mối liên hệ giữa chi tiêu y tế và kết quả sức khỏe là phức tạp --- chi tiêu cao là điều kiện cần nhưng chưa đủ. Cấu trúc hệ thống y tế, công bằng trong tiếp cận dịch vụ, và các yếu tố xã hội khác (thu nhập, giáo dục, vệ sinh) đều đóng vai trò quan trọng.
+
+Đại dịch COVID-19 đã gây ra sự gián đoạn rõ rệt nhưng tạm thời ở nhiều quốc gia, đặc biệt ở khu vực Mỹ Latinh và Nam Á, nhấn mạnh tầm quan trọng của khả năng chống chịu (resilience) của hệ thống y tế.
