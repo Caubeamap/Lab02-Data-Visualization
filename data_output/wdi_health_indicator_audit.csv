@@ -1,5 +1,0 @@
-Indicator_Code,Clean_Name,Confirmed_In_WDI,Indicator_Name,Topic,Unit
-SP.DYN.LE00.IN,Life_expectancy,Yes,"Life expectancy at birth, total (years)",Health: Mortality,years
-SH.DYN.MORT,Under5_mortality,Yes,"Mortality rate, under-5 (per 1,000 live births)",Health: Mortality,"per 1,000 live births"
-SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,Yes,Current health expenditure (% of GDP),Health: Health systems,% of GDP
-SP.POP.TOTL,Population,Yes,"Population, total",Health: Population: Structure,people
