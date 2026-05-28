@@ -69,18 +69,19 @@ Indicator & Quốc gia giữ & Quốc gia loại (rỗng) & Quốc gia loại (g
 \subsection{Trực quan hóa và nhận xét}
 
 % ======================================================================
-\subsubsection{Biểu đồ 1 --- Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000 – 2023) (Line chart)}
+\subsubsection{Biểu đồ 1 --- Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000--2017) (Line chart)}
 
 \textbf{Loại biểu đồ:} Biểu đồ đường (line chart).\\
 \textbf{Lý do chọn:} Biểu đồ đường phù hợp với dữ liệu chuỗi thời gian (time-series), cho phép quan sát xu hướng tăng/giảm của tỷ lệ nhập học qua từng năm và so sánh trực quan giữa hai bậc học trên cùng một trục thời gian.
 
-\reportfigure{images/education/education_enrollment_trend.png}{Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000 – 2023). Mỗi đường màu đại diện cho một bậc học (màu xanh ngọc biểu diễn bậc tiểu học và màu xanh lá cây biểu diễn bậc trung học, kèm theo chú giải bên cạnh); trục tung thể hiện tỷ lệ nhập học ròng (\%).}{fig:edu-enrollment-trend}
+\reportfigure{images/education/education_enrollment_trend.png}{Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000--2017). Mỗi đường màu đại diện cho một bậc học (màu xanh ngọc biểu diễn bậc tiểu học và màu xanh lá cây biểu diễn bậc trung học, kèm theo chú giải bên cạnh); trục tung thể hiện tỷ lệ nhập học ròng (\%). Giai đoạn sau 2017 không được đưa vào biểu đồ này vì số quan sát của hai chỉ số nhập học ròng giảm mạnh và không còn đủ nhất quán để so sánh xu hướng toàn cầu.}{fig:edu-enrollment-trend}
 
 \textbf{Nhận xét:}
 \begin{itemize}
-    \item \textbf{Bậc tiểu học:} Tỷ lệ nhập học ròng trung bình toàn cầu tăng từ 86,3\% (năm 2000) lên 90,7\% (năm 2017), cho thấy tiến bộ đáng kể trong phổ cập giáo dục cơ bản. Khu vực Europe \& Central Asia và East Asia \& Pacific đạt mức cao nhất ($\sim$93--94\%), trong khi Sub-Saharan Africa vẫn ở mức thấp nhất ($\sim$81\%).
-    \item \textbf{Bậc trung học:} Xu hướng tăng rõ rệt hơn, từ trung bình 68,0\% (2000) lên 78,0\% (2017), phản ánh nỗ lực mở rộng giáo dục nâng cao. Tuy nhiên, khoảng cách giữa các khu vực lớn hơn nhiều so với bậc tiểu học: Europe \& Central Asia đạt $\sim$91\% trong khi Sub-Saharan Africa chỉ đạt $\sim$38\%.
-    \item \textbf{Hạn chế dữ liệu:} Từ năm 2018 trở đi, số quốc gia có dữ liệu giảm mạnh (từ $\sim$120 xuống còn 3--45 quốc gia), nên xu hướng trong giai đoạn này không đáng tin cậy và không được đưa vào nhận xét.
+    \item \textbf{Tỷ lệ nhập học tiểu học luôn cao hơn trung học:} Trong toàn bộ giai đoạn quan sát, đường nhập học tiểu học nằm ổn định phía trên đường nhập học trung học. Điều này cho thấy giáo dục tiểu học đã đạt mức phổ cập cao hơn, trong khi giáo dục trung học vẫn là bậc học có rào cản tiếp cận lớn hơn.
+    \item \textbf{Xu hướng cải thiện trong giai đoạn 2000--2017:} Tỷ lệ nhập học ròng bậc tiểu học tăng nhẹ từ khoảng 86,3\% năm 2000 lên khoảng 90,7\% năm 2017. Tỷ lệ nhập học ròng bậc trung học tăng rõ hơn, từ khoảng 68,0\% lên khoảng 78,0\%. Như vậy, tiến bộ ở bậc trung học nhanh hơn, nhưng vẫn chưa bắt kịp mức phổ cập của bậc tiểu học.
+    \item \textbf{Khoảng cách giữa hai bậc học vẫn tồn tại:} Dù đường trung học có xu hướng đi lên, khoảng cách giữa hai đường vẫn duy trì khoảng 10--15 điểm phần trăm trong phần lớn giai đoạn. Điều này phản ánh thách thức trong việc giữ học sinh tiếp tục học sau bậc tiểu học, nhất là ở các quốc gia có thu nhập thấp hoặc hệ thống giáo dục chưa hoàn chỉnh.
+    \item \textbf{Không kéo dài biểu đồ đến 2023:} Từ năm 2018, độ phủ dữ liệu của hai chỉ số nhập học ròng giảm mạnh; riêng sau 2018, chỉ số trung học không còn quan sát hợp lệ trong file đã xử lý. Do đó, biểu đồ được giới hạn ở giai đoạn 2000--2017 để tránh tạo khoảng trống lớn trên trục thời gian hoặc khiến người đọc hiểu nhầm rằng xu hướng vẫn tiếp tục đến 2023. Các khác biệt theo khu vực không được kết luận từ biểu đồ này, mà được phân tích rõ hơn ở heatmap tỷ lệ nhập học trung học theo khu vực và năm.
 \end{itemize}
 
 % ======================================================================
