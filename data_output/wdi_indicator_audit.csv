@@ -1,0 +1,17 @@
+﻿Objective,Objective_Label,Indicator_Code,Clean_Name,Confirmed_In_WDI,Indicator_Name,Topic,Unit,Analysis_Role
+economy,Kinh tế,NY.GDP.MKTP.CD,GDP_current_USD,Yes,GDP (current US$),Economic Policy & Debt: National accounts: US$ at current prices: Aggregate indicators,US$,Quy mô nền kinh tế
+economy,Kinh tế,NY.GDP.PCAP.CD,GDP_per_capita_current_USD,Yes,GDP per capita (current US$),Economic Policy & Debt: National accounts: US$ at current prices: Aggregate indicators,US$ per person,Mức sống bình quân
+economy,Kinh tế,NY.GDP.MKTP.KD.ZG,GDP_growth_annual_pct,Yes,GDP (annual % growth),Economic Policy & Debt: National accounts: Growth rates,%,Tốc độ tăng trưởng
+economy,Kinh tế,SI.POV.DDAY,Poverty_headcount_3usd_2021PPP_pct,Yes,Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population),Poverty: Poverty rates,%,Tỷ lệ nghèo
+education,Giáo dục,SE.PRM.NENR,Primary_Net_Enrollment,Yes,"School enrollment, primary (% net)",Education: Participation,%,Mức độ tiếp cận giáo dục tiểu học
+education,Giáo dục,SE.SEC.NENR,Secondary_Net_Enrollment,Yes,"School enrollment, secondary (% net)",Education: Participation,%,Mức độ tiếp cận giáo dục trung học
+education,Giáo dục,SE.ADT.LITR.ZS,Adult_Literacy_Rate,Yes,"Literacy rate, adult total (% of people ages 15 and above)",Education: Outcomes,%,Kết quả giáo dục qua tỷ lệ biết chữ
+education,Giáo dục,SE.XPD.TOTL.GD.ZS,Education_Expenditure_GDP,Yes,"Government expenditure on education, total (% of GDP)",Education: Inputs,% of GDP,Mức đầu tư của chính phủ cho giáo dục
+health,Sức khỏe và dân số,SP.DYN.LE00.IN,Life_expectancy,Yes,"Life expectancy at birth, total (years)",Health: Mortality,years,Tuổi thọ trung bình
+health,Sức khỏe và dân số,SH.DYN.MORT,Under5_mortality,Yes,"Mortality rate, under-5 (per 1,000 live births)",Health: Mortality,"per 1,000 live births",Tỷ lệ tử vong trẻ em dưới 5 tuổi
+health,Sức khỏe và dân số,SH.XPD.CHEX.GD.ZS,Health_expenditure_pct_GDP,Yes,Current health expenditure (% of GDP),Health: Health systems,% of GDP,Chi tiêu y tế
+health,Sức khỏe và dân số,SP.POP.TOTL,Population,Yes,"Population, total",Health: Population: Structure,people,Quy mô dân số
+environment,Môi trường,EN.GHG.CO2.MT.CE.AR5,CO2_Emissions_Total_MtCO2e,Yes,Carbon dioxide (CO2) emissions (total) excluding LULUCF (Mt CO2e),Environment: Emissions,Mt CO2e,Quy mô phát thải CO2
+environment,Môi trường,EN.GHG.CO2.PC.CE.AR5,CO2_Emissions_Per_Capita,Yes,Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita),Environment: Emissions,t CO2e/capita,Phát thải CO2 bình quân đầu người
+environment,Môi trường,EG.FEC.RNEW.ZS,Renewable_Energy_Pct,Yes,Renewable energy consumption (% of total final energy consumption),Environment: Energy production & use,%,Tỷ trọng năng lượng tái tạo
+environment,Môi trường,AG.LND.FRST.ZS,Forest_Area_Pct,Yes,Forest area (% of land area),Environment: Land use,% of land area,Tỷ lệ diện tích rừng

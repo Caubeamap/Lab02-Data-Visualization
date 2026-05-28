@@ -2,8 +2,117 @@
 
 \subsection{Vai trò trong bài toán chung}
 
-Phần môi trường và biến đổi khí hậu kiểm tra tính bền vững của quá trình phát triển. Các chỉ số phát thải CO\textsubscript{2}, phát thải bình quân đầu người, năng lượng tái tạo và diện tích rừng giúp nhận diện áp lực môi trường đi kèm với tăng trưởng và thay đổi dân số.
+Phần phân tích môi trường và biến đổi khí hậu đóng vai trò kiểm tra tính bền vững của quá trình phát triển kinh tế và dân số. Trong khung phân tích chung, nếu kinh tế phản ánh nguồn lực vật chất, giáo dục và sức khỏe đại diện cho phúc lợi con người, thì môi trường phản ánh mặt trái của tăng trưởng --- các áp lực mà con người đặt lên tài nguyên thiên nhiên và hệ thống khí hậu toàn cầu. Sự phát triển chỉ thực sự bền vững khi tốc độ tăng trưởng kinh tế không đi kèm với sự hủy hoại môi trường và cạn kiệt tài nguyên thiên nhiên vượt quá khả năng tự phục hồi của Trái Đất.
 
-\subsection{Câu hỏi phân tích và kế hoạch trực quan hóa}
+\subsection{Câu hỏi phân tích}
 
-Phần môi trường xem xét xu hướng phát thải CO\textsubscript{2}, phát thải bình quân đầu người, tỷ lệ tiêu thụ năng lượng tái tạo và diện tích rừng. Area chart phù hợp để thể hiện biến động tổng phát thải theo thời gian, choropleth map cho phép nhận diện khác biệt địa lý về phát thải bình quân đầu người, grouped bar chart hỗ trợ so sánh năng lượng tái tạo giữa các khu vực, còn heatmap giúp phát hiện thay đổi diện tích rừng theo quốc gia và năm. Khi đưa kết quả vào báo cáo, phần này cần nhấn mạnh vai trò của môi trường như một điều kiện kiểm tra tính bền vững của tăng trưởng, thay vì chỉ mô tả mức phát thải riêng lẻ.
+Phần phân tích môi trường tập trung vào bốn câu hỏi chính:
+\begin{enumerate}
+    \item Xu hướng tổng lượng phát thải CO\textsubscript{2} toàn cầu thay đổi ra sao theo thời gian? Đóng góp của các vùng địa lý thay đổi như thế nào trong giai đoạn 2000--2020?
+    \item Mức phát thải CO\textsubscript{2} bình quân đầu người phân bố thế nào trên bản đồ địa lý? Sự phân hóa này phản ánh bất bình đẳng phát triển ra sao?
+    \item Tỷ trọng tiêu thụ năng lượng tái tạo thay đổi thế nào giữa các khu vực địa lý qua hai mốc thời gian 2000 và 2021?
+    \item Xu hướng biến động diện tích rừng phản ánh áp lực phát triển lên tài nguyên tự nhiên ở các khu vực và quốc gia ra sao từ 2000 đến 2023?
+\end{enumerate}
+
+\subsection{Chỉ số sử dụng (Indicators)}
+
+Bốn chỉ số WDI được lựa chọn để phản ánh áp lực lên khí hậu (phát thải CO\textsubscript{2}), xu hướng chuyển dịch xanh (năng lượng tái tạo) và hiện trạng tài nguyên sinh thái (diện tích rừng).
+
+\begin{longtable}{L{3.8cm}L{3.5cm}L{1.3cm}L{5cm}}
+\caption{Các chỉ số WDI sử dụng trong phân tích môi trường và biến đổi khí hậu.}
+\label{tab:environment-indicators}\\
+\toprule
+Mã WDI & Tên cột sau tiền xử lý & Đơn vị & Ý nghĩa và lý do chọn \\
+\midrule
+\endfirsthead
+\toprule
+Mã WDI & Tên cột sau tiền xử lý & Đơn vị & Ý nghĩa và lý do chọn \\
+\midrule
+\endhead
+\path{EN.GHG.CO2.MT.CE.AR5} & \path{CO2_Emissions_Total_MtCO2e} & Mt CO$_2$e & Tổng phát thải CO\textsubscript{2} (không gồm LULUCF) --- đo lường áp lực trực tiếp lên bầu khí quyển. \\
+\path{EN.GHG.CO2.PC.CE.AR5} & \path{CO2_Emissions_Per_Capita} & t CO$_2$e & Phát thải CO\textsubscript{2} bình quân đầu người --- đo lường dấu chân carbon của mỗi người dân. \\
+\path{EG.FEC.RNEW.ZS} & \path{Renewable_Energy_Pct} & \% & Tỷ lệ tiêu thụ năng lượng tái tạo --- phản ánh mức độ chuyển dịch cơ cấu năng lượng xanh. \\
+\path{AG.LND.FRST.ZS} & \path{Forest_Area_Pct} & \% diện tích đất & Tỷ lệ diện tích rừng --- phản ánh sức khỏe của hệ sinh thái tự nhiên trên cạn. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Lưu ý về mức phủ dữ liệu:} Chỉ số năng lượng tái tạo (\path{EG.FEC.RNEW.ZS}) chỉ có dữ liệu đến năm 2021 trong bản cập nhật WDI gốc, do đó các phân tích liên quan đến năng lượng tái tạo sẽ chỉ giới hạn đến năm 2021. Đối với CO\textsubscript{2}, nhóm sử dụng mã chỉ số mới từ bộ GHG (\path{EN.GHG.CO2.*}) vì các mã cũ đã ngừng cập nhật. Chỉ số phát thải CO\textsubscript{2} có dữ liệu đầy đủ từ 203/217 quốc gia thật, năng lượng tái tạo từ 212 quốc gia, và diện tích rừng có 214 quốc gia. Đây là nhóm chỉ số có độ phủ khá tốt trên bình diện toàn cầu.
+
+\subsection{Tiền xử lý dữ liệu}
+
+Dữ liệu môi trường được lọc từ file gốc \texttt{WDIEXCEL.xlsx} theo pipeline chung:
+\begin{itemize}
+    \item Lọc 4 indicators môi trường, giai đoạn 2000--2023, loại bỏ các aggregate rows và chỉ giữ các quốc gia thực.
+    \item Xử lý missing values: nội suy tuyến tính đối với các gap $\leq$ 2 năm liền kề; loại bỏ cặp country--indicator nếu có gap dài hoặc rỗng hoàn toàn.
+    \item Pivot thành dạng bảng wide format và xuất ra file \texttt{wdi\_environment.csv} chứa \textbf{5.143 dòng} tương ứng với \textbf{216 quốc gia}.
+\end{itemize}
+
+\subsection{Trực quan hóa và nhận xét}
+
+\subsubsection{Biểu đồ 1 --- Xu hướng tổng phát thải CO\textsubscript{2} theo khu vực (Stacked Area Chart)}
+
+\textbf{Loại biểu đồ:} Biểu đồ miền chồng (stacked area chart).\\
+\textbf{Lý do chọn:} Biểu đồ miền chồng rất thích hợp để thể hiện sự thay đổi của một đại lượng tổng (tổng phát thải CO\textsubscript{2} toàn cầu) theo thời gian, đồng thời mô tả rõ cấu trúc đóng góp của các thực thể cấu thành (ở đây là các khu vực địa lý) trên cùng một trục trực quan.
+
+\reportfigure{images/environment/environment_co2_trend.png}{Xu hướng tổng phát thải CO\textsubscript{2} toàn cầu phân rã theo 7 khu vực địa lý, giai đoạn 2000--2020 (đơn vị: triệu tấn CO\textsubscript{2} tương đương - Mt CO\textsubscript{2}e).}{fig:env-co2-trend}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Xu hướng tăng toàn cầu:} Tổng phát thải CO\textsubscript{2} toàn cầu tăng liên tục trong giai đoạn 2000--2019. Năm 2020 ghi nhận sự sụt giảm nhẹ (khoảng 4--5\% ở nhiều vùng) do tác động của phong tỏa diện rộng trong đại dịch COVID-19 làm ngưng trệ các hoạt động giao thông và sản xuất công nghiệp toàn cầu.
+    \item \textbf{Sự bùng nổ của East Asia \& Pacific:} Khu vực Đông Á \& Thái Bình Dương có lượng phát thải tăng vọt đáng kinh ngạc, từ \textbf{6.681 Mt CO\textsubscript{2}e} năm 2000 lên \textbf{12.746 Mt CO\textsubscript{2}e} năm 2010, và đạt \textbf{15.959 Mt CO\textsubscript{2}e} năm 2020 (tăng gấp 2,4 lần). Sự bùng nổ này chủ yếu được thúc đẩy bởi sự trỗi dậy của các nền kinh tế đang phát triển nhanh, dẫn đầu là Trung Quốc với cơ cấu năng lượng phụ thuộc nhiều vào than đá.
+    \item \textbf{Sự suy giảm ở các khu vực phát triển:} Trái lại, phát thải ở các nước phát triển có xu hướng đạt đỉnh và giảm dần. Bắc Mỹ (\textbf{North America}) giảm từ \textbf{6.472 Mt CO\textsubscript{2}e} (2000) xuống còn \textbf{5.015 Mt CO\textsubscript{2}e} (2020) (giảm 22,5\%). Tương tự, Châu Âu \& Trung Á (\textbf{Europe \& Central Asia}) giảm từ \textbf{6.906 Mt CO\textsubscript{2}e} xuống còn \textbf{6.047 Mt CO\textsubscript{2}e}. Sự sụt giảm này phản ánh nỗ lực chuyển dịch cơ cấu kinh tế sang dịch vụ, sử dụng năng lượng hiệu quả hơn và áp dụng các chính sách cam kết giảm phát thải mạnh mẽ.
+    \item \textbf{Sự gia tăng ở các vùng đang phát triển khác:} Nam Á (\textbf{South Asia}) tăng hơn gấp đôi từ \textbf{1.039 Mt CO\textsubscript{2}e} lên \textbf{2.502 Mt CO\textsubscript{2}e}, cho thấy quá trình công nghiệp hóa và đô thị hóa đang làm gia tăng nhanh chóng nhu cầu sử dụng năng lượng hóa thạch tại đây.
+\end{itemize}
+
+\subsubsection{Biểu đồ 2 --- Bản đồ phát thải CO\textsubscript{2} bình quân đầu người (Choropleth Map)}
+
+\textbf{Loại biểu đồ:} Bản đồ phân bố (choropleth map).\\
+\textbf{Lý do chọn:} Bản đồ phân bố địa lý giúp nhận diện trực quan mức độ tập trung phát thải và bất bình đẳng dấu chân carbon giữa các quốc gia. Sử dụng thang màu chuyển sắc từ lam (phát thải thấp) sang cam/đỏ (phát thải cao) giúp người xem nhận biết ngay lập tức các vùng có mức phát thải bình quân đầu người cao bất thường.
+
+\reportfigure{images/environment/environment_co2_map.png}{Bản đồ phát thải CO\textsubscript{2} bình quân đầu người của các quốc gia năm 2020 (tấn CO\textsubscript{2}e/người).}{fig:env-co2-map}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Phân hóa rõ rệt:} Bản đồ bộc lộ sự bất bình đẳng khí hậu sâu sắc. Các quốc gia phát triển ở Bắc Mỹ (\textbf{North America} có mức trung bình \textbf{10,4 t/người} năm 2020) và các quốc gia giàu tài nguyên dầu mỏ ở Trung Đông và Bắc Phi (\textbf{MENA} trung bình \textbf{8,8 t/người} năm 2020) là những vùng có màu sắc đậm nhất. Ví dụ, Hoa Kỳ phát thải tới \textbf{13,47 t/người} năm 2020.
+    \item \textbf{Dấu chân carbon thấp ở nhóm thu nhập thấp:} Ngược lại, các quốc gia ở Châu Phi hạ Sahara (\textbf{Sub-Saharan Africa} trung bình ổn định ở mức chỉ \textbf{0,93 t/người}) và Nam Á (\textbf{South Asia} trung bình \textbf{1,36 t/người} năm 2020) có màu lam rất nhạt, phản ánh mức tiêu thụ năng lượng và quy mô công nghiệp rất thấp trên đầu người.
+    \item \textbf{Xu hướng các quốc gia cụ thể:} Hoa Kỳ dù vẫn ở mức rất cao nhưng đã giảm đáng kể so với mức cực thịnh \textbf{21,01 t/người} năm 2000. Ngược lại, Việt Nam tăng nhanh từ \textbf{0,73 t/người} (2000) lên \textbf{3,55 t/người} (2020), phản ánh rõ quá trình công nghiệp hóa chuyển đổi từ nông nghiệp truyền thống sang sản xuất công nghiệp nặng và phát triển hạ tầng năng lượng.
+\end{itemize}
+
+\subsubsection{Biểu đồ 3 --- Tiêu thụ năng lượng tái tạo theo khu vực (Grouped Bar Chart)}
+
+\textbf{Loại biểu đồ:} Biểu đồ cột nhóm (grouped bar chart).\\
+\textbf{Lý do chọn:} Thích hợp để so sánh giá trị định lượng giữa các đối tượng phân loại (các khu vực địa lý) và đồng thời theo dõi sự thay đổi của từng đối tượng qua hai thời điểm cụ thể (năm 2000 và năm 2021).
+
+\reportfigure{images/environment/environment_renewable_bar.png}{So sánh tỷ lệ tiêu thụ năng lượng tái tạo trung bình theo khu vực địa lý giữa hai năm 2000 và 2021 (đơn vị: \% tổng tiêu thụ năng lượng cuối cùng).}{fig:env-renew-bar}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Hiện trạng đặc thù của Châu Phi:} \textbf{Sub-Saharan Africa} luôn dẫn đầu về tỷ lệ năng lượng tái tạo (\textbf{71,2\%} năm 2000 và \textbf{61,4\%} năm 2021). Tuy nhiên, giá trị này chủ yếu phản ánh việc sử dụng sinh khối truyền thống (đốt gỗ, chất thải nông nghiệp để đun nấu) ở nông thôn thiếu điện, chứ không phải các nguồn điện sạch hiện đại. Sự sụt giảm của tỷ lệ này (giảm 9,8\%) phản ánh quá trình đô thị hóa và thay thế nhiên liệu truyền thống bằng điện lưới hóa thạch hoặc khí hóa lỏng.
+    \item \textbf{Nỗ lực chuyển dịch xanh của Châu Âu:} Châu Âu \& Trung Á (\textbf{Europe \& Central Asia}) là khu vực điển hình ghi nhận mức tăng đáng kể từ \textbf{16,4\%} (2000) lên \textbf{23,3\%} (2021), thể hiện rõ kết quả của các chính sách chuyển dịch xanh mạnh mẽ như tại Đức (tăng từ \textbf{3,7\%} lên \textbf{18,5\%} trong cùng giai đoạn).
+    \item \textbf{Áp lực tăng trưởng đè nặng lên năng lượng sạch:} Khu vực Đông Á \& Thái Bình Dương (\textbf{East Asia \& Pacific}) giảm từ \textbf{24,1\%} xuống còn \textbf{17,8\%}, cho thấy tốc độ tăng trưởng kinh tế nhanh đã làm gia tăng nhu cầu năng lượng hóa thạch vượt trội so với tốc độ xây dựng các nguồn năng lượng tái tạo mới.
+\end{itemize}
+
+\subsubsection{Biểu đồ 4 --- Biến động diện tích rừng của các quốc gia (Heatmap)}
+
+\textbf{Loại biểu đồ:} Bản đồ nhiệt dạng ma trận (heatmap).\\
+\textbf{Lý do chọn:} Heatmap giúp hiển thị ma trận hai chiều (quốc gia $\times$ năm) một cách trực quan, sử dụng mức độ đậm nhạt của màu sắc (ở đây là sắc xanh lá cây) để phản ánh tỷ lệ phủ xanh, từ đó dễ dàng nhận diện xu hướng suy giảm diện tích rừng (màu xanh nhạt dần) hoặc phục hồi rừng (màu xanh đậm lên) qua từng năm.
+
+\reportfigure{images/environment/environment_forest_heatmap.png}{Heatmap thể hiện biến động tỷ lệ diện tích rừng (\%) của một số quốc gia đại diện trong giai đoạn 2000--2023. Mỗi dòng đại diện cho một quốc gia; màu xanh đậm biểu thị tỷ lệ che phủ cao.}{fig:env-forest-heatmap}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Nạn phá rừng nghiêm trọng ở Nam Mỹ:} Khu vực Mỹ Latinh \& Caribbean (\textbf{Latin America \& Caribbean}) có độ phủ rừng trung bình giảm mạnh từ \textbf{44,8\%} (2000) xuống còn \textbf{40,7\%} (2023). Minh chứng rõ nhất là Brazil (quốc gia sở hữu rừng Amazon) với diện tích rừng giảm liên tục từ \textbf{65,9\%} xuống còn \textbf{59,4\%}, phản ánh tình trạng phá rừng để lấy đất làm nông nghiệp, chăn nuôi gia súc và khai khoáng quy mô lớn.
+    \item \textbf{Tín hiệu phục hồi tích cực ở Đông Á:} Trái lại, một số quốc gia ghi nhận nỗ lực phục hồi rừng ấn tượng. Trung Quốc tăng từ \textbf{18,9\%} (2000) lên \textbf{23,4\%} (2023), và Việt Nam tăng từ \textbf{37,9\%} lên \textbf{46,7\%} (trong giai đoạn 2000--2020). Thành quả này đạt được nhờ các chương trình trồng rừng phòng hộ quy mô lớn và chính sách bảo vệ rừng tự nhiên nghiêm ngặt của chính phủ.
+    \item \textbf{Sự ổn định ở các nước ôn đới:} Các nước như Hoa Kỳ (\textbf{33,1\%} đến \textbf{33,9\%}) và Đức (\textbf{32,5\%} đến \textbf{32,7\%}) duy trì độ che phủ rừng hầu như không đổi trong suốt hơn hai thập kỷ, phản ánh sự phát triển của hệ thống quản lý rừng bền vững và chính trị ổn định.
+\end{itemize}
+
+\subsection{Thảo luận}
+
+Tổng hợp bốn biểu đồ môi trường cho thấy một bức tranh đa chiều đầy thách thức về tính bền vững toàn cầu:
+\begin{itemize}
+    \item \textbf{Sự dịch chuyển địa lý của phát thải:} Sự gia tăng nhanh chóng lượng phát thải ở Đông Á và Nam Á đặt ra thách thức lớn cho việc kiểm soát biến đổi khí hậu toàn cầu. Dù các nước phát triển đã bắt đầu giảm phát thải tuyệt đối nhờ chuyển dịch sang dịch vụ và năng lượng sạch, sự gia tăng phát thải từ quá trình công nghiệp hóa của các nước đang phát triển đã bù trừ phần giảm này, khiến tổng phát thải toàn cầu tiếp tục tăng.
+    \item \textbf{Mâu thuẫn giữa nhu cầu và chuyển dịch năng lượng:} Năng lượng tái tạo đang có xu hướng tăng dần tại các quốc gia thu nhập cao nhờ chính sách chuyển dịch xanh, tuy nhiên tốc độ tăng vẫn chưa đủ nhanh để thay thế hoàn toàn năng lượng hóa thạch trong bối cảnh nhu cầu tiêu dùng gia tăng. Tại các nước đang phát triển, tỷ trọng năng lượng tái tạo giảm do tốc độ mở rộng nguồn điện than/khí hóa thạch để đáp ứng nhu cầu tăng trưởng kinh tế nhanh hơn tốc độ đầu tư năng lượng sạch.
+    \item \textbf{Sự suy giảm tài nguyên sinh thái:} Nạn phá rừng ở Mỹ Latinh và Châu Phi hạ Sahara làm suy giảm khả năng hấp thụ carbon tự nhiên của Trái Đất, gián tiếp làm trầm trọng thêm vấn đề biến đổi khí hậu. Sự phục hồi diện tích rừng ở một số nước như Việt Nam hay Trung Quốc chứng minh rằng chính sách quản lý đúng đắn có thể đảo ngược xu hướng suy thoái môi trường.
+\end{itemize}
+
+Mối liên hệ giữa phần môi trường với kinh tế và xã hội là rất mật thiết: phát triển kinh tế nhanh chóng giúp nâng cao GDP và tuổi thọ trung bình, nhưng nếu không kiểm soát tốt sẽ đi kèm với sự bùng nổ carbon và suy thoái tài nguyên rừng. Điều này nhấn mạnh tầm quan trọng của việc theo đuổi các mục tiêu phát triển bền vững (SDG) một cách đồng bộ.

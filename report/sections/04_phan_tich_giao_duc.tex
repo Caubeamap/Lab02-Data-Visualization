@@ -2,8 +2,149 @@
 
 \subsection{Vai trò trong bài toán chung}
 
-Phần giáo dục sử dụng file \texttt{data\_output/wdi\_education.csv} để đánh giá khả năng tiếp cận giáo dục và mức đầu tư cho giáo dục. Đây là góc nhìn về chất lượng nguồn nhân lực, bổ sung cho phần kinh tế khi xem xét liệu tăng trưởng có đi kèm cải thiện nền tảng học tập hay không.
+Phần phân tích giáo dục tập trung kiểm tra khả năng tiếp cận giáo dục và mức đầu tư công cho giáo dục của các quốc gia. Trong khung phân tích phát triển bền vững của nhóm, giáo dục đóng vai trò cầu nối giữa tăng trưởng kinh tế và cải thiện chất lượng con người: nếu kinh tế phản ánh nguồn lực vật chất, thì giáo dục cho biết nguồn lực đó có được chuyển hóa thành nền tảng tri thức cho thế hệ tiếp theo hay không. Kết quả phân tích giáo dục sẽ được đặt cạnh phần kinh tế và sức khỏe để so sánh mức phát triển ``toàn diện'' giữa các khu vực.
 
-\subsection{Câu hỏi phân tích và kế hoạch trực quan hóa}
+\subsection{Câu hỏi phân tích}
 
-Phân tích giáo dục tập trung vào sự thay đổi của tỷ lệ nhập học và tỷ lệ biết chữ theo thời gian, khác biệt giữa khu vực hoặc nhóm thu nhập, và mối liên hệ giữa chi tiêu giáo dục với kết quả giáo dục. Các biểu đồ dự kiến gồm biểu đồ đường cho xu hướng nhập học, biểu đồ cột cho chi tiêu giáo dục giữa các khu vực, scatter plot cho quan hệ giữa tỷ lệ biết chữ và tỷ lệ nhập học, cùng heatmap để thể hiện tỷ lệ biết chữ theo quốc gia và năm. Khi ảnh Tableau được bổ sung, mỗi hình cần có chú thích nêu rõ chỉ số, đơn vị đo, giai đoạn và phạm vi quốc gia có dữ liệu.
+Phân tích giáo dục tập trung vào ba câu hỏi chính:
+
+\begin{enumerate}
+    \item Tỷ lệ nhập học ròng (bậc tiểu học và trung học) thay đổi như thế nào trong giai đoạn 2000--2023? Có sự chênh lệch rõ rệt giữa các khu vực không?
+    \item Mức đầu tư công cho giáo dục (theo \% GDP) khác nhau ra sao giữa các khu vực và nhóm thu nhập? Các khu vực có tỷ lệ nhập học thấp có đầu tư ít hơn không?
+    \item Tỷ lệ biết chữ ở người lớn có mối liên hệ gì với tỷ lệ nhập học? Các quốc gia đầu tư nhiều cho giáo dục có đạt kết quả tốt hơn không?
+\end{enumerate}
+
+\subsection{Chỉ số sử dụng (Indicators)}
+
+Bốn chỉ số WDI được chọn cho mục tiêu giáo dục, mỗi chỉ số đại diện cho một khía cạnh khác nhau: \textit{đầu vào} (chi tiêu), \textit{tiếp cận} (nhập học), và \textit{kết quả} (biết chữ).
+
+\begin{longtable}{L{3.8cm}L{3.5cm}L{1.3cm}L{5cm}}
+\caption{Các chỉ số WDI sử dụng trong phân tích giáo dục, kèm theo vai trò phân tích.}
+\label{tab:education-indicators}\\
+\toprule
+Mã WDI & Tên cột output & Đơn vị & Ý nghĩa và lý do chọn \\
+\midrule
+\endfirsthead
+\toprule
+Mã WDI & Tên cột output & Đơn vị & Ý nghĩa và lý do chọn \\
+\midrule
+\endhead
+\path{SE.PRM.NENR} & \path{Primary_Net_Enrollment} & \% & Tỷ lệ nhập học ròng bậc tiểu học --- phản ánh khả năng tiếp cận giáo dục cơ bản, là nền tảng để đo lường phổ cập giáo dục (SDG 4.1). \\
+\path{SE.SEC.NENR} & \path{Secondary_Net_Enrollment} & \% & Tỷ lệ nhập học ròng bậc trung học --- phản ánh mức tiếp cận giáo dục nâng cao, đo lường khả năng giữ chân học sinh sau bậc tiểu học. \\
+\path{SE.ADT.LITR.ZS} & \path{Adult_Literacy_Rate} & \% & Tỷ lệ biết chữ ở người lớn ($\geq$ 15 tuổi) --- là thước đo ``outcome'' tổng hợp, phản ánh kết quả tích lũy của hệ thống giáo dục qua nhiều thế hệ. \\
+\path{SE.XPD.TOTL.GD.ZS} & \path{Education_Expenditure_GDP} & \% GDP & Chi tiêu công cho giáo dục --- là thước đo ``input'', cho biết mức độ ưu tiên ngân sách quốc gia dành cho giáo dục. \\
+\bottomrule
+\end{longtable}
+
+\textbf{Lưu ý về mức phủ dữ liệu:} Các chỉ số giáo dục có mức phủ thấp hơn đáng kể so với kinh tế và sức khỏe. Cụ thể, tỷ lệ nhập học tiểu học chỉ có dữ liệu đủ từ 143/217 quốc gia, tỷ lệ nhập học trung học từ 133 quốc gia, chi tiêu giáo dục từ 139 quốc gia, và đặc biệt tỷ lệ biết chữ chỉ có 41 quốc gia đủ điều kiện (do nhiều nước không thu thập chỉ số này thường xuyên). Ngoài ra, dữ liệu nhập học tập trung chủ yếu trong giai đoạn 2000--2017; từ năm 2018 trở đi số quốc gia có dữ liệu giảm mạnh. Các nhận xét trong phần này cần được đọc trong ngữ cảnh mẫu không hoàn chỉnh này.
+
+\subsection{Tiền xử lý dữ liệu}
+
+Dữ liệu được trích xuất từ file \texttt{WDIEXCEL.xlsx} theo cùng pipeline chung của nhóm (xem mục 3). Quy trình:
+
+\begin{itemize}
+    \item Lọc 4 indicators theo mã WDI, giai đoạn 2000--2023, chỉ giữ 217 quốc gia thật (loại bỏ 48 aggregate rows).
+    \item Xử lý missing values: nội suy tuyến tính nếu khoảng trống nội bộ $\leq$ 2 năm; loại cặp country--indicator nếu khoảng trống $>$ 2 năm hoặc không có quan sát nào.
+    \item Pivot thành wide format và xuất file \texttt{wdi\_education.csv}: \textbf{3.537 dòng}, \textbf{192 quốc gia} (ít hơn so với 217 do nhiều quốc gia bị loại vì thiếu dữ liệu giáo dục).
+\end{itemize}
+
+\begin{longtable}{L{3.8cm}L{2.5cm}L{2.5cm}L{2.5cm}L{2.5cm}}
+\caption{Mức phủ dữ liệu của 4 indicator giáo dục sau tiền xử lý.}
+\label{tab:edu-coverage}\\
+\toprule
+Indicator & Quốc gia giữ & Quốc gia loại (rỗng) & Quốc gia loại (gap) & Tổng bản ghi \\
+\midrule
+\endfirsthead
+\toprule
+Indicator & Quốc gia giữ & Quốc gia loại (rỗng) & Quốc gia loại (gap) & Tổng bản ghi \\
+\midrule
+\endhead
+\path{SE.PRM.NENR} & 143 & 29 & 45 & 2.144 \\
+\path{SE.XPD.TOTL.GD.ZS} & 139 & 17 & 61 & 2.610 \\
+\path{SE.SEC.NENR} & 133 & 37 & 47 & 1.637 \\
+\path{SE.ADT.LITR.ZS} & 41 & 62 & 114 & 294 \\
+\bottomrule
+\end{longtable}
+
+\subsection{Trực quan hóa và nhận xét}
+
+% ======================================================================
+\subsubsection{Biểu đồ 1 --- Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000 – 2023) (Line chart)}
+
+\textbf{Loại biểu đồ:} Biểu đồ đường (line chart).\\
+\textbf{Lý do chọn:} Biểu đồ đường phù hợp với dữ liệu chuỗi thời gian (time-series), cho phép quan sát xu hướng tăng/giảm của tỷ lệ nhập học qua từng năm và so sánh trực quan giữa hai bậc học trên cùng một trục thời gian.
+
+\reportfigure{images/education/education_enrollment_trend.png}{Xu hướng tỷ lệ nhập học ròng bậc tiểu học và trung học (2000 – 2023). Mỗi đường màu đại diện cho một bậc học (màu xanh ngọc biểu diễn bậc tiểu học và màu xanh lá cây biểu diễn bậc trung học, kèm theo chú giải bên cạnh); trục tung thể hiện tỷ lệ nhập học ròng (\%).}{fig:edu-enrollment-trend}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Bậc tiểu học:} Tỷ lệ nhập học ròng trung bình toàn cầu tăng từ 86,3\% (năm 2000) lên 90,7\% (năm 2017), cho thấy tiến bộ đáng kể trong phổ cập giáo dục cơ bản. Khu vực Europe \& Central Asia và East Asia \& Pacific đạt mức cao nhất ($\sim$93--94\%), trong khi Sub-Saharan Africa vẫn ở mức thấp nhất ($\sim$81\%).
+    \item \textbf{Bậc trung học:} Xu hướng tăng rõ rệt hơn, từ trung bình 68,0\% (2000) lên 78,0\% (2017), phản ánh nỗ lực mở rộng giáo dục nâng cao. Tuy nhiên, khoảng cách giữa các khu vực lớn hơn nhiều so với bậc tiểu học: Europe \& Central Asia đạt $\sim$91\% trong khi Sub-Saharan Africa chỉ đạt $\sim$38\%.
+    \item \textbf{Hạn chế dữ liệu:} Từ năm 2018 trở đi, số quốc gia có dữ liệu giảm mạnh (từ $\sim$120 xuống còn 3--45 quốc gia), nên xu hướng trong giai đoạn này không đáng tin cậy và không được đưa vào nhận xét.
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 2 --- Chi tiêu giáo dục giữa các khu vực (Stacked/Grouped bar chart)}
+
+\textbf{Loại biểu đồ:} Biểu đồ cột (grouped bar chart hoặc stacked bar chart).\\
+\textbf{Lý do chọn:} Biểu đồ cột phù hợp để so sánh giá trị định lượng giữa các nhóm phân loại (categorical). Trong trường hợp này, các khu vực địa lý là biến phân loại, và chi tiêu giáo dục (\% GDP) là biến định lượng. Biểu đồ cột cho phép nhận diện nhanh khu vực nào đầu tư nhiều/ít cho giáo dục.
+
+\reportfigure{images/education/education_expenditure_region.png}{Chi tiêu công cho giáo dục trung bình theo khu vực (giá trị mới nhất có dữ liệu, \% GDP). Mỗi thanh đại diện cho một khu vực; giá trị là trung bình của các quốc gia có dữ liệu trong khu vực đó.}{fig:edu-expenditure-region}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Mức chi tiêu giáo dục trung bình toàn cầu dao động quanh 4,3--4,5\% GDP trong suốt giai đoạn 2000--2023, cho thấy sự ổn định tương đối về ưu tiên ngân sách.
+    \item \textbf{North America} dẫn đầu với mức trung bình $\sim$4,9\% GDP, tiếp theo là \textbf{Europe \& Central Asia} ($\sim$4,9\%) và \textbf{Latin America \& Caribbean} ($\sim$4,7\%). \textbf{Middle East \& North Africa} đạt $\sim$4,4\%, trong khi \textbf{East Asia \& Pacific} ở mức $\sim$3,9\%.
+    \item \textbf{Sub-Saharan Africa} ($\sim$3,8\%) và \textbf{South Asia} ($\sim$3,7\%) có mức chi tiêu thấp nhất --- trùng khớp với hai khu vực có tỷ lệ nhập học thấp nhất ở biểu đồ 1. Điều này gợi ý mối liên hệ giữa mức đầu tư và kết quả giáo dục, tuy nhiên mối quan hệ nhân quả không thể kết luận chỉ từ dữ liệu quan sát.
+    \item Năm 2020 có mức chi tiêu tăng nhẹ lên 4,6\% ở nhiều khu vực, có thể phản ánh chi tiêu bổ sung cho giáo dục trực tuyến trong đại dịch COVID-19, tuy nhiên giá trị này cũng chịu ảnh hưởng của GDP sụt giảm (mẫu số giảm dẫn đến tỷ lệ tăng).
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 3 --- Tương quan tỷ lệ biết chữ và tỷ lệ nhập học (Scatter plot)}
+
+\textbf{Loại biểu đồ:} Biểu đồ phân tán (scatter plot).\\
+\textbf{Lý do chọn:} Scatter plot là loại biểu đồ tiêu chuẩn để khám phá mối quan hệ giữa hai biến định lượng liên tục. Trong trường hợp này, nhóm muốn kiểm tra giả thuyết: quốc gia có tỷ lệ biết chữ cao thì tỷ lệ nhập học trung học cũng cao, phản ánh tính nhất quán giữa ``kết quả tích lũy'' và ``tiếp cận hiện tại'' của hệ thống giáo dục.
+
+\reportfigure{images/education/education_literacy_enrollment_scatter.png}{Mối quan hệ giữa tỷ lệ biết chữ ở người lớn (\%) và tỷ lệ nhập học ròng bậc trung học (\%). Mỗi điểm đại diện cho một quốc gia (giá trị trung bình qua các năm có dữ liệu); màu sắc biểu diễn khu vực, kích thước thể hiện mức chi tiêu giáo dục. Chỉ 18 quốc gia có đồng thời dữ liệu biết chữ và nhập học trung học đủ điều kiện.}{fig:edu-literacy-scatter}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item Scatter plot cho thấy \textbf{tương quan dương mạnh} giữa tỷ lệ biết chữ và tỷ lệ nhập học trung học (hệ số Pearson $r \approx 0,83$). Các quốc gia có tỷ lệ biết chữ cao ($> 95\%$) hầu hết đạt tỷ lệ nhập học trung học trên 70\%.
+    \item Các quốc gia \textbf{Sub-Saharan Africa} (4 quốc gia trong mẫu) có xu hướng phân bố ở vùng giá trị thấp hơn trên cả hai trục, phản ánh thách thức kép: nền tảng giáo dục tích lũy yếu và tiếp cận giáo dục hiện tại còn hạn chế. Tuy nhiên, kích thước mẫu nhỏ nên kết luận chỉ mang tính gợi ý.
+    \item Một số quốc gia \textbf{Middle East \& North Africa} có vị trí đáng chú ý: tỷ lệ biết chữ trung bình ($\sim$88\%) nhưng nhập học dao động rộng, gợi ý ảnh hưởng của các yếu tố giới tính, xung đột hoặc chính sách giáo dục đặc thù.
+    \item \textbf{Lưu ý quan trọng:} Biểu đồ yêu cầu đồng thời dữ liệu biết chữ \textit{và} nhập học trung học, nên mẫu thu hẹp từ 41 quốc gia có biết chữ xuống chỉ còn \textbf{18 quốc gia} (thuộc 5 khu vực: Đông Á \& Thái Bình Dương, Châu Âu \& Trung Á, Mỹ Latinh \& Caribbean, Trung Đông \& Bắc Phi, Châu Phi cận Sahara). Các khu vực Bắc Mỹ và Nam Á không xuất hiện trên biểu đồ do không có quốc gia nào đủ cả hai chỉ số. Do đó, biểu đồ phản ánh mẫu thiên lệch, không đại diện toàn cầu.
+\end{itemize}
+
+% ======================================================================
+\subsubsection{Biểu đồ 4 --- Bản đồ nhiệt tỷ lệ nhập học trung học theo khu vực và năm (Heatmap)}
+
+\textbf{Loại biểu đồ:} Bản đồ nhiệt (heatmap).\\
+\textbf{Lý do chọn:} Heatmap rất phù hợp để biểu diễn ma trận hai chiều (Khu vực $\times$ Năm). Bằng cách tổng hợp dữ liệu từ cấp quốc gia lên cấp khu vực địa lý, biểu đồ giải quyết triệt để vấn đề dữ liệu bị khuyết thiếu (ô trống) ở nhiều nước, đồng thời mang lại một cái nhìn tổng quan toàn diện trên một màn hình duy nhất mà không cần thanh cuộn.
+
+\reportfigure{images/education/education_secondary_heatmap.png}{Bản đồ nhiệt tỷ lệ nhập học ròng bậc trung học trung bình theo khu vực và năm, giai đoạn 2000--2018 (đơn vị: \%).}{fig:edu-secondary-heatmap}
+
+\textbf{Nhận xét:}
+\begin{itemize}
+    \item \textbf{Châu Âu \& Trung Á dẫn đầu ổn định:} Khu vực \textit{Europe \& Central Asia} duy trì tỷ lệ nhập học trung học rất cao và ổn định trong suốt giai đoạn (86,7--91,6\%), hiển thị bằng các ô màu xanh đậm nhất. Đến năm 2017, khu vực này đạt \textbf{91,6\%}.
+    \item \textbf{Bắc Mỹ --- dữ liệu biến động do mẫu cực nhỏ:} Khu vực \textit{North America} chỉ có dữ liệu từ năm 2010 trở đi (không có dữ liệu 2000--2009 do cả ba quốc gia --- Hoa Kỳ, Canada, Bermuda --- đều thiếu hoặc bị loại). Đáng lưu ý, năm 2010 chỉ đại diện bởi Bermuda (\textbf{58,2\%}), năm 2011 cũng chỉ Bermuda (\textbf{72,8\%}), từ 2012 trở đi chỉ Canada (91--99,8\%). Sự nhảy vọt từ 58\% lên 92\% không phản ánh tiến bộ thực sự mà do thay đổi quốc gia đại diện. Do đó, giá trị trung bình khu vực Bắc Mỹ trên heatmap \textbf{không đáng tin cậy} cho mục đích so sánh giữa các khu vực.
+    \item \textbf{Sự bứt phá của Đông Á:} Đông Á \& Thái Bình Dương (\textit{East Asia \& Pacific}) ghi nhận nỗ lực thu hẹp khoảng cách ấn tượng nhất, tăng từ \textbf{59,2\%} năm 2000 lên \textbf{82,1\%} năm 2017, phản ánh tốc độ phát triển giáo dục nhanh đi cùng với sự cất cánh kinh tế trong khu vực.
+    \item \textbf{Sự cải thiện đồng đều ở các khu vực khác:} Mỹ Latinh (\textit{Latin America \& Caribbean}) tăng từ \textbf{64,9\%} (2000) lên \textbf{78,9\%} (2018); Nam Á (\textit{South Asia}) tăng mạnh từ \textbf{41,7\%} lên \textbf{66,5\%} (2018).
+    \item \textbf{Sub-Saharan Africa vẫn ở nhóm thấp nhất:} Dù có cải thiện từ \textbf{31,9\%} (2000) lên \textbf{41,5\%} (2018), khu vực này vẫn hiển thị bằng các ô màu nhạt nhất, cho thấy tỷ lệ học sinh được tiếp cận giáo dục trung học tại đây vẫn chưa đạt tới một nửa dân số trong độ tuổi.
+    \item \textbf{Giới hạn thời gian:} Dữ liệu sau năm 2018 bị khuyết hoàn toàn ở tất cả các khu vực do độ trễ cập nhật của Ngân hàng Thế giới đối với chỉ số nhập học ròng bậc trung học. Do đó, heatmap chỉ giới hạn trực quan hóa từ năm 2000 đến 2018 để tránh các cột trống gây hiểu lầm.
+\end{itemize}
+
+\subsection{Thảo luận}
+
+Tổng hợp bốn biểu đồ cho thấy bức tranh giáo dục toàn cầu trong giai đoạn 2000--2023 có tiến bộ đáng kể nhưng phân hóa rõ rệt theo khu vực:
+
+\begin{itemize}
+    \item \textbf{Tiến bộ tổng thể:} Tỷ lệ nhập học bậc tiểu học tăng từ 86,3\% lên 90,7\% và bậc trung học tăng từ 68,0\% lên 78,0\% trong giai đoạn 2000--2017, cho thấy nỗ lực phổ cập giáo dục có kết quả trên quy mô toàn cầu.
+
+    \item \textbf{Khoảng cách khu vực vẫn rất lớn:} Sub-Saharan Africa tụt hậu ở cả bốn chỉ số --- tỷ lệ nhập học tiểu học thấp nhất ($\sim$81\%), nhập học trung học chỉ đạt $\sim$38\%, biết chữ $\sim$75\%, và chi tiêu giáo dục thấp ($\sim$3,7\% GDP). Đây là khu vực cần ưu tiên đầu tư nhất nếu mục tiêu là phát triển bao trùm.
+
+    \item \textbf{Mối liên hệ ``input--outcome'':} Các khu vực chi tiêu giáo dục cao hơn (North America, Europe) cũng có tỷ lệ nhập học và biết chữ cao hơn. Tương quan dương mạnh ($r \approx 0,83$) giữa biết chữ và nhập học trung học củng cố giả thuyết: đầu tư giáo dục dài hạn tạo ra nền tảng tri thức bền vững. Tuy nhiên, dữ liệu quan sát không cho phép kết luận nhân quả --- các yếu tố khác như thu nhập quốc dân, ổn định chính trị, và cấu trúc dân số cũng đóng vai trò quan trọng.
+
+    \item \textbf{Hạn chế dữ liệu đáng lưu ý:} Chỉ số giáo dục trong WDI có mức phủ thấp hơn đáng kể so với kinh tế và sức khỏe. Tỷ lệ biết chữ chỉ có 41/217 quốc gia (thiên lệch về nước đang phát triển). Dữ liệu nhập học mất liên tục sau 2017. Các kết luận trong phần này nên được đọc như xu hướng mô tả trên mẫu có sẵn, không phải kết luận đại diện toàn cầu.
+\end{itemize}
+
+Khi đặt kết quả giáo dục cạnh kết quả kinh tế (phần 4), có thể thấy: nhiều quốc gia có GDP tăng mạnh trong giai đoạn 2000--2023 cũng đồng thời cải thiện tỷ lệ nhập học, gợi ý rằng phát triển kinh tế và giáo dục có xu hướng đi cùng chiều. Tuy nhiên, một số quốc gia giàu tài nguyên có GDP cao nhưng kết quả giáo dục trung bình, cho thấy tăng trưởng kinh tế chưa đủ để đảm bảo phát triển giáo dục --- cần thêm các chính sách phân bổ ngân sách và quản trị giáo dục hiệu quả.
