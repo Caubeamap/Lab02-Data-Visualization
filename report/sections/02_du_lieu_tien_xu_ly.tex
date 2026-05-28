@@ -2,18 +2,32 @@
 
 \subsection{Nguồn dữ liệu}
 
-Dữ liệu gốc là file \texttt{WDIEXCEL.xlsx}, gồm các sheet chính \texttt{Data}, \texttt{Country}, \texttt{Series} và các bảng metadata liên quan của World Bank. Nhóm chỉ giữ các quốc gia hoặc vùng lãnh thổ có trường \texttt{Region} hợp lệ trong sheet \texttt{Country}, qua đó loại bỏ các dòng tổng hợp như World, nhóm thu nhập hoặc khu vực tổng hợp. Quyết định này giúp mỗi quan sát trong dữ liệu đầu ra tương ứng với một đơn vị địa lý cụ thể, phù hợp với các biểu đồ so sánh quốc gia và bản đồ trong Tableau.
+Dữ liệu gốc là file \texttt{WDIEXCEL.xlsx} của World Bank, gồm các sheet chính \texttt{Data}, \texttt{Country}, \texttt{Series} và các bảng metadata liên quan. Nhóm sử dụng Python để đọc trực tiếp file Excel gốc, xác minh các mã indicator cần dùng trong sheet \texttt{Series}, đồng thời lấy thông tin quốc gia, khu vực và nhóm thu nhập từ sheet \texttt{Country}.
 
-\subsection{Quy trình tiền xử lý}
+Vì file WDI chứa cả quốc gia thật và nhiều dòng tổng hợp như World, nhóm thu nhập hoặc khu vực tổng hợp, nhóm chỉ giữ các đơn vị có trường \texttt{Region} hợp lệ trong sheet \texttt{Country}. Quyết định này giúp mỗi quan sát trong dữ liệu đầu ra tương ứng với một đơn vị địa lý cụ thể, phù hợp với các biểu đồ so sánh quốc gia và dashboard trong Tableau.
 
-Mỗi hướng phân tích được lọc theo các indicator WDI đã xác nhận có trong sheet \texttt{Series}. Giai đoạn phân tích là 2000--2023. Với từng cặp \texttt{Country\_Code} và \texttt{Indicator\_Code}, nhóm xử lý giá trị thiếu theo quy tắc nhất quán để bảo đảm khả năng so sánh giữa các chủ đề. Nếu toàn bộ chuỗi không có quan sát, cặp country--indicator bị loại khỏi phân tích. Nếu khoảng thiếu dữ liệu nội bộ dài hơn 2 năm liên tiếp, cặp đó cũng bị loại để tránh tạo chuỗi dữ liệu giả. Các khoảng thiếu nội bộ dài tối đa 2 năm được nội suy tuyến tính. Nhóm không ngoại suy dữ liệu ở đầu hoặc cuối chuỗi thời gian vì các giá trị này không có điểm neo quan sát đủ tin cậy.
+\subsection{Quy trình tiền xử lý chung}
 
-Đối với phần kinh tế, quy trình này tạo ra file \texttt{wdi\_economy.csv} làm nguồn dữ liệu chính cho Tableau, đồng thời tạo thêm các file kiểm tra indicator và báo cáo làm sạch. Các file phụ không được dùng trực tiếp để vẽ biểu đồ, nhưng giúp truy vết quyết định tiền xử lý khi cần kiểm tra lại.
+Thay vì để từng mục tiêu đọc và làm sạch riêng từ file gốc, nhóm xây dựng một pipeline tiền xử lý chung. Pipeline này tạo trước một file dữ liệu sạch nền tảng, sau đó các file dữ liệu theo mục tiêu được trích từ chính file sạch chung đó.
+
+Quy trình gồm các bước:
+
+\begin{enumerate}
+    \item Đọc file \texttt{WDIEXCEL.xlsx} và metadata từ các sheet \texttt{Data}, \texttt{Country}, \texttt{Series}.
+    \item Lọc các indicator thuộc bốn mục tiêu phân tích: kinh tế, giáo dục, sức khỏe--dân số và môi trường.
+    \item Chỉ giữ giai đoạn 2000--2023 và các quốc gia hoặc vùng lãnh thổ có \texttt{Region} hợp lệ.
+    \item Với từng cặp \texttt{Country\_Code} và \texttt{Indicator\_Code}, loại chuỗi không có quan sát hoặc có khoảng thiếu nội bộ dài hơn 2 năm liên tiếp.
+    \item Nội suy tuyến tính các khoảng thiếu nội bộ dài tối đa 2 năm; không ngoại suy ở đầu hoặc cuối chuỗi thời gian.
+    \item Xuất dữ liệu sạch chung dạng long format thành \texttt{data\_output/wdi\_clean\_base.csv}.
+    \item Từ file sạch chung, pivot và xuất các file wide format riêng cho từng mục tiêu để kết nối vào Tableau.
+\end{enumerate}
+
+Cách tổ chức này giúp nhóm vừa có một chuẩn làm sạch thống nhất, vừa vẫn giữ được cấu trúc dữ liệu riêng phù hợp với từng nhóm biểu đồ trong Tableau.
 
 \subsection{File đầu ra}
 
 \begin{longtable}{L{5cm}L{9cm}}
-\caption{Các file dữ liệu đầu ra phục vụ trực quan hóa và kiểm tra tiền xử lý. File chính được dùng trong Tableau; các file kiểm tra hỗ trợ truy vết quyết định làm sạch dữ liệu.}
+\caption{Các file dữ liệu đầu ra phục vụ Tableau, báo cáo và kiểm tra tiền xử lý.}
 \label{tab:output-files}\\
 \toprule
 File & Nội dung \\
@@ -23,9 +37,12 @@ File & Nội dung \\
 File & Nội dung \\
 \midrule
 \endhead
-\texttt{data\_output/}\linebreak\texttt{wdi\_economy.csv} & Dữ liệu sạch cho chủ đề phát triển kinh tế \\
-\texttt{data\_output/}\linebreak\texttt{wdi\_education.csv} & Dữ liệu sạch cho chủ đề giáo dục \\
-\texttt{data\_output/}\linebreak\texttt{wdi\_economy}\linebreak\texttt{\_indicator\_audit.csv} & Kiểm tra indicator kinh tế trong WDI \\
-\texttt{data\_output/}\linebreak\texttt{wdi\_economy}\linebreak\texttt{\_cleaning\_report.csv} & Báo cáo trạng thái làm sạch từng cặp country--indicator kinh tế \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_clean\_base.csv} & Dữ liệu WDI đã tiền xử lý chung ở dạng long format, làm nguồn sạch nền tảng cho toàn bộ bài. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_economy.csv} & Dữ liệu sạch cho mục tiêu phát triển kinh tế, trích từ file sạch chung. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_education.csv} & Dữ liệu sạch cho mục tiêu giáo dục, trích từ file sạch chung. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_health.csv} & Dữ liệu sạch cho mục tiêu sức khỏe và dân số, trích từ file sạch chung. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_environment.csv} & Dữ liệu sạch cho mục tiêu môi trường và biến đổi khí hậu, trích từ file sạch chung. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_indicator\_audit.csv} & Bảng kiểm tra indicator, tên cột sạch, vai trò phân tích và trạng thái xác nhận trong WDI. \\
+\texttt{data\_output/}\linebreak\texttt{wdi\_cleaning\_report.csv} & Báo cáo trạng thái làm sạch cho từng cặp country--indicator, bao gồm số quan sát, khoảng thiếu nội bộ và số giá trị được nội suy. \\
 \bottomrule
 \end{longtable}

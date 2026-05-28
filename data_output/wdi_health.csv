@@ -1,4 +1,4 @@
-Country_Name,Country_Code,Region,Income_Group,Year,Life_expectancy,Under5_mortality,Health_expenditure_pct_GDP,Population
+﻿Country_Name,Country_Code,Region,Income_Group,Year,Life_expectancy,Under5_mortality,Health_expenditure_pct_GDP,Population
 Afghanistan,AFG,Middle East & North Africa,Low income,2000,55.005,131.7,,20130327.0
 Afghanistan,AFG,Middle East & North Africa,Low income,2001,55.511,127.5,,20284307.0
 Afghanistan,AFG,Middle East & North Africa,Low income,2002,56.225,123.1,9.44339085,21378117.0

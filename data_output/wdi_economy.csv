@@ -1,4 +1,4 @@
-Country_Name,Country_Code,Region,Income_Group,Year,GDP_current_USD,GDP_per_capita_current_USD,GDP_growth_annual_pct,Poverty_headcount_3usd_2021PPP_pct
+﻿Country_Name,Country_Code,Region,Income_Group,Year,GDP_current_USD,GDP_per_capita_current_USD,GDP_growth_annual_pct,Poverty_headcount_3usd_2021PPP_pct
 Afghanistan,AFG,Middle East & North Africa,Low income,2000,3521418059.923445,174.9309914301663,,
 Afghanistan,AFG,Middle East & North Africa,Low income,2001,2813571753.8725324,138.7068216761131,-9.431974070086198,
 Afghanistan,AFG,Middle East & North Africa,Low income,2002,3825701438.9996333,178.95408837923534,28.600001170678837,
